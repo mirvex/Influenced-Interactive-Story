@@ -29,10 +29,19 @@
         <p>“Alright, back on topic,” said Tylinus, “What's the plan for Virba.”</p>,
 
     </div>
-    <script>
-    
 
-        let exoPath = `Kaina sighs and looks towards Tylinus, “What kind of specializations do we need for this one.”
+
+    <div id="buttons">
+
+    </div>
+
+
+
+    <script>
+const exoPath = {
+
+    exo2 : {
+        text : `Kaina sighs and looks towards Tylinus, “What kind of specializations do we need for this one.”
 “Details are scarce, but all we know is that the client wants the VIP kicked from his position in his dictatorship.” explained tylinus
 “They want him dead or alive?” asks Wenter
 “Either or…” Tylinus started
@@ -64,38 +73,154 @@ The console said, “Hello, Tylinus, and welcome to Virba, please wait while we 
 As they headed towards the exit, a console in the wall said, “Here is your ticket for proof of ownership for you craft. Right now, you are entering Portra Park.” a little slot dispensed a tourist pamphlet and Kaina receives it. As it was naming more places and hotels to stay at, the crew were already walking away. When they reached the surface, they were surprised to find that the “Park” they were presumably supposed to be at, was nothing but flat concrete. Gray fog limited the vision so much that you couldn’t see more than 15 feet in any direction.
 “Some park.” retorted Rugasus. “What are supposed to do just walk.” Upon saying this,  he realized that the other three were already walking ahead of them. He gave an expression of disappointing realization and moved to catch up with the group.
 
-The crew were walking when they spotted some buildings up ahead, “So there is a city here after all.” said Rugasus. When they reached the street, it was wide enough to fit 4 lanes of traffic going both ways, but not a single car occupied even a parking space. The lights continued to control traffic despite its absence. The skyscrapers that ran along the sides were lacking any form uniqueness, no lights, no signs, just gray concrete and tinted glass. A man was walking in the opposite direction of the crew, looking as disorganized as a file drawer stuffed with too many papers.`
+The crew were walking when they spotted some buildings up ahead, “So there is a city here after all.” said Rugasus. When they reached the street, it was wide enough to fit 4 lanes of traffic going both ways, but not a single car occupied even a parking space. The lights continued to control traffic despite its absence. The skyscrapers that ran along the sides were lacking any form uniqueness, no lights, no signs, just gray concrete and tinted glass. A man was walking in the opposite direction of the crew, looking as disorganized as a file drawer stuffed with too many papers.`,
+         Decisions : [
+            ["ask for directions", "heoPath1"],
+            ["Have everyone take your lead", "agrPath"],
+            ["Split up", "cowPath"]
+        ]
+    },
+    exo3 : {
+        text : `Upon arriving at the bar, it had more character than the outside could ever become. The yellow neon lights highlighting the walls, tables with polished wooden finishes, and T.Vs lining the bar showing the latest products from the A.N.T. Sugar Glass, and an unoccupied stage with curtains drawn..
+“Hello there, what can I get you four?” asks the Bartender.
+“Just waters all around would be fine.” said Tylinus 
+“Ahh, that’s boring,” said the Bartender, “suppose you waiting for someone?”
+“Guess you could say that.” Rugasus said not fully paying attention.
+The bartender scratches his beard and simply answers, “Alright.” The four find a table and sit down around.
+“Don’t suppose you could give us some info about the client.” Rugasus said.
+“We ain’t got much, just said that we'd meet him here.” explained Tylinus
+“What do you mean,” argues Kaina, “I thought we don’t take vague contracts. This could be a trap for all we know.” Right on que, the curtains of the stage opened dramatically.
+“You truly z’ink ve vould treat our guests so poorly.” said the man on the stage. He wore dark blue robes with matching pants, white gloves, dress shoes, a hat with an outlandish design, and an umbrella in his hand. Music had started playing upon his entrance. “I’m sure j’ou had already been exposed to ze unique horrors zat zis city had been plagued by.” said the man extravagantly. The Bartender had started to pre-fill drinks.
+“Oh yeah,” said Rugasus leaning back in his chair, “What might that be?” 
+The man smiles elegantly and raises his hands above his head and yells, “Expression!” Just then, the doors swung open and people began to fill the bar at an alarming rate. The man raises the end of his umbrella to mouth, “Individuality, uniqueness, character, but most important of all, it’s just no fun.” The crowd cheers to his presence. “I vill not sit here and vatch zis, my city, fade avay into obscurity, so ladies and gentlemen, I present to you our main event.” A band quickly assembles on the stage and begins to play vigorously. “The men and vomen here see ze consequences as negligible, and here tonight they vill spill zere heart and soul into zeir art. So sit back, relax, and release every ounce of pent up energy have into zis night!” The crowd cheered again and form a dance floor in the center of the bar and begin to dance wildly. The crew stand up trying to see over the crowd but get separated.`,
 
-let agrPath = `Talk envelops the group soon after and it was interrupted almost as fast as it started by Kaina stating, “Fine I’ll do it myself, it’s not like I need your help anyway.”
-Tylinus tries to calm Kaina down, “No, we need to go as a team, we can’t go alone if the reward is this high, too risky. Me and Rugasus will go with you” Rugasus looks towards tylinus showing that he didn’t want to be dragged into this.`
+        Decisions : [
+            ["Do Nothing", "heoPath2"],
+            ["Fight", "agrPath2"],
+            ["Resist", "cowPath2"]
+        ]
+    },
+    exo4 : {
+        text : `Just then, the doors were blown down and men in gray suits with clubs and sidearms stormed the bar. Another slightly more decorated officer shot into the air and yelled, “That’s enough, arrest them all!” Kaina was dropped onto the floor as the people scrambled.`,
 
-let cowPath = `“Look, we already had to deal with reality shifters and zombie masters, I say we skip it.” explained Kaina.
-“I’d say for once I agree with him.” stated Rugasus.
-“But-” started Tylinus
-“No buts,” interrupted Kaina, “I need a break, I have to deal with the fact that our greatest trump card might be useless against another user of the magic arts. So you know what, I’m out.” Kaina then leaves the room without a second thought. (That’s It? Ending)`
+        Decisions : [
+            ["Draw weapons", "agrPath3"],
+            ["Follow his suggestion", "heoPath3"],
+            ["Surrender", "cowPath3"]
+        ]
+    },
+    exo5 : {
+        text : `Rugasus was already busy getting into slugfests with the Gray-suits and Koiraze was hitting them with the dull side of her sword.
+Tylinus linked up with Kaina said to the man from the stage, “What’s going on.”
+The man replies, “zey are here to crash my party.”
+A Gray-suit approached them and said, “Surrender yourself, you have no right to be here!”
+“Ah, but alas, it vould seem zat I have my right, right here-” said the man. The gray-suit gave a confused look for a split second before being thrusted upon by the end of the man's umbrella and being subdued by the butt end of it. The man calls out to the rest of the group, “Come, my friends, zis vay!” Rugasus and Koiraze fell back towards the back exit. Before the gray-suits could catch up, the man opened his umbrella and flashed them with more than 10,000 lumens, he then retreated and closed the door and proceeded to barricade in with a nearby shelf.
+The crew were running down an underground canal, lit only by an open flame lantern carried by the man. Rugasus asks, “Who are you?”
+The man responds, “The names Brozuire, and I vill be your client for today.”
+“What?” said Kaina.
+“I vill explain later, first ve need to make sure ve lose ze heat, zen I vill explain everything ven I deliver j’ou to headquarters.” Brozuire said hastily.
 
-let thatsIt = `Upon passing up the contract, there is no story to tell. Like, really, the filler doesn't even start until the next game. The only thing we can say is that they got bored and left. Nothing, no fight, no conflict, no interaction. So here is your reward, the one ending you don’t have to beat the game for.`
+A door opens in a dark room and the foggy light flows into it. Brozuire peers around the frame for a moment and said in a hushed voice, “It is clear, go!” The crew go in with Brozuire going last and shutting the door and hanging the lantern on the wall. He then walks up to the door on the opposite side and bangs on it multiple times. A voice said, “Yes, can I help you?” 
+“You know, you could’ve done your part in taking out ze trash, but I don’t need your help, I can do it myself!” yelled Brozuire. They waited a bit to see what would happen, then the door opened and a child no more than 13 peered out.
+“Brozuire,” said the child, running up to hug him.
+“Awww, did I scare you little Frenta.”
+“Y-Yeah, I heard what happened, we were so worried.” said Frenta
+“It’s okay, I'm here now, now vhere is your sister, ve have important business to attend to.” whispered Brozuire. 
+“Oh-This way.” pointed Frenta. Brozuire gestured to the group to follow. Inside, the crew observed a large scale operation being enacted. Cars were being maintenanced, plans were being discussed, weapons were being stored, and food was being distributed. “In there.” pointed Frenta.
+Brozuire patted her head, “Good girl, now run along and spread ze news zat our VIP’s have arrived.” She nodded her head and ran off. Brozuire moved aside a curtain in a doorway and gestures again to follow. Heavy talk emanated from the room. Upon entering the room, a table showing the whole map of the city is seen in the center of the room, many people were around it debating plans and whatnot. A woman at the end of the table sees that Brozuire had entered.
+“Who are these guy’s Brozuire?” she said sternly.
+“Madame, zees are ze guest ve asked so graciously to be a part of our plans going forward.” explained Brozuire. The room is instantly drowned in chatter.
+The woman looks in interest, she then said, “This meeting is adjourned.” The crowd vacates the room. Only Brozuire, the crew, and the woman are left in the room. “So...sources say you are the legendary mercenaries.”
+“Well, that’s truly flattering, but what on what claims, what makes you so sure we are not just regular mercenaries?” interrogated Kaina.
+The woman stares for a moment and answers, “You guys were the ones that put a stop to the B.U.B.B.L.E Rogue.”
+“Well-” Kaina said.
+“And you were the ones who took down Viridian and restored Fallen’s power.” remarked the woman.
+“These are some pretty bold claims, but everyone knows that the FFORMLESS FFEAR took care of both of those.” counters Kaina.
+“Their files would say otherwise.” retorts the woman.
+“This is ridiculous,” said Rugasus slamming his hands on the table, “there’s no way you could have access to FFORMLESS FFEAR files.”
+“Well they were pretty easy to get a hold of.” said the woman.
+“How?” asks Tylinus
+“After a little legal argument after Fallens power was lost, a lot of files were declassified, including the ones mentioning the individuals cleaning up all their messes.” The crew bowed their heads in disappointment.
+“Whatever the case, who are you, and what do you want?” asks Rugasus sternly.
+“Vell, allow me to introduce you to ze leader of ze resistance group Formatia, Lytheys.” Brozuire remarked.
+“And we would want you to work with us in toppling the man at the top of the hierarchy, Jotaque, from power.” finished Lytheys. 
+They all stared at one another for a moment, and Rugasus said, “I guess, we came this far for how much?”
+“Ve are villing to offer a 350,000 Rulta, for your services.” answers Brozuire.
+“Well I’m game,” said Kaina, “What’s the plan?”
+“First things first,” Lytheys responded, “You two, take off your masks.” She was pointing towards Koiraze and Kaina. The crew cringed at the idea of having Kaina take off his mask, especially in the presence of a woman. “I need to be able to trust you, show me who you really are.” explains Lytheys.
+Koiraze takes off her mask and said, “Anata ga anata no jinsei no saidai no kutsujoku o kanjitainara, watashi no gesuto ni naru. (if you wish to feel the greatest humiliation of your life, then be my guest)” She then proceeds to leave the room.
+“What did she say?” asks Lytheys 
+“Oh, we don’t know.” responded Rugasus, “what we do know is that you don’t want Kaina to take off his mask, especially in the presence of a...feminine figure”
+“What do mean, explain?” ordered Lytheys 
+“It’s not particularly something we would like to explain in this professional setting.” explained Tylinus.
+“I don’t care about the reason, we are short on time and I need people I can trust, you want your payment, then take off the mask.” commanded Lytheys. Rugasus and Tylinus both nod agreement to Kaina and head over to the other side of the table.`,
+
+        Decisions : [
+            ["Take off mask", "heoPath4"],
+            ["Come up with an embarrasing excuse, cowPath4"]
+        ]
+        
+    },
+    exo6 : {
+            text : `A few days had passed, and the time had come for the plan to be put into action. Kaina was awaiting for his role to be called when it became apparent that they were dangerously close to being behind schedule. Kaina went to Brozuire for answers.
+“Ve are ready to go, but it vould seem zat Lytheys has spent a little more time zan usual at ze top of ze clock tower.” replied Brozuire.
+“Why there?” asked Kaina.
+“It vas apparently built by her father, she even helped vith a brick or two.” answered Brozuire. “Perhaps you can fetch her for me, our vindow is closing fast, and ve vill need our leader leading ze operation.”
+“Got it.” Kaina said as he unholsters his lever actions and uses the recoil of firing them periodically in order to fly.
+“I have not seen zat ever in my life.” Brozuire said as he watches a physics defying man flying off into absurdity. The clock tower was not hard to spot as it was a different building architecturally compared to the rest of the city. It was unfinished, and a large portion of the roof was missing. Kaina flew into the opening and slid across the wooden floor. He looked around and found Lytheys sitting down at the edge of the tower, observing the non-active city.`,
+
+        Decisions : [
+            ["Approach with empathy", "heoPath5"],
+            ["Approach with anger that the job is being ignored", "agrPath4"],
+            ["Approach with no real idea what to say", "cowPath5"]
+        ]
+
+    },
+    exo7 : {
+        text : `Upon observing the target area, the plan was already in jeopardy. A large white and blue building towers over the area, looking down at anyone who glances at it. It widens as it gets to the base, with guards covering every occupiable space around it. The roads leading into the building were still made of dirt and mud with tractors and dump-trucks regular working the road. A convoy of trucks ran through and stopped at the entrance.
+“Zis is not vhat’s supposed to happen.” said Brozuire scouting the area on top of a dirt hill with the reflective side of his umbrella.
+“What’s the status?” urges Rugasus from below.
+“ze shipment vas supposed to be one of great importance, but zis is just a regular convoy.” explained Brozuire, not taking his eye off his umbrella.
+“What’s the difference?” askes Tylinus.
+“See, ze zing is zat ve know zat Jotaque is planning somezing big, he’s been ordering an absurd amount of material for it and all his scientific minds are in prioritizing it fruition,” explains Brozuire, “Ze plan vas for us to plant as much as vhatever ve call an explosive into ze various parts and observe ze violent dismantling of his vision. In due time, because of ze sheer size of ze project, ze failing economy of ze city vill do all ze vork for us and force Jotaque to fade into obscurity.”
+“So then where is the shipment.” asks Kaina.
+“I don’t know, ze shipment vas supposed to arrive approximately 50 minutes ago.” Brozuire said with urgency. 
+“Do we have any idea what this project of his is,” asks Rugasus.
+“Ve only got ze first half of it’s production name, it was named C3N-T1.” Brozuire answered. 
+“So what do we do now, we can’t sit here forever.” said Rugasus.`,
+
+        Decisions : [
+            []
+        ]
+
+    }
+}
+
+
+
+
+
     
-let heoPath = `Talk envelops the group soon after and it was interrupted almost as fast as it started by Rugasus stating, “Forget it, lets just go.”
-“Well that was a quick 180, have I influenced you that much.” Kaina retorted.
-“First, your statement is invalid, second, shut up.” Rugasus said back`
 
+  
     
     
 let storyContainer = document.getElementById('story');
 
 let buttonContainer = document.getElementById('buttons');
     
-    function createButton(choice){
-        let button = document.createElement('button')
+function createButton(){
+        let button = document.createElement ('button');
+        
+        button.innerHTML = "Accept Contract";
 
-        button.innerHTML = "My Button " + choice
-
-        button.addEventListener('click', function() {alert('Button' + choice + ' was clicked')})
+        button.addEventListener ('click', function() {alert('Button was clicked.')})
 
         buttonContainer.appendChild(button);
     }
-    createButton()
+    for(var i = 0; i<3; i++){
+        createButton();
+    }
     
     </script>
   
