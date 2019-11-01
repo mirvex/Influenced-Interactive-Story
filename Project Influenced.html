@@ -32,13 +32,16 @@
 
     let history = ["intro"];
         
-    const myStory = {
+    const story = {
         intro : {
             text : "Offer available at participating U.S. Wendy’s for a limited time. Mobile purchase required. Offer must be redeemed via Wendy’s app or online order. Account registration required. © 2019 The Coca-Cola Company",
-            choices : ["Example 1", "Example 2", "Example 3"]
+            choices : [
+                ["Example 1", ""],
+                ["Example 2", ""],
+                ["Example 3", ""]
+            ]
         }
     }
-    
     
     function createButton(buttonText, choice){
         let button = document.createElement ('button');
@@ -70,16 +73,12 @@
             buildStory(story[page].text);
         }
 
-
+        for(let choice of story[currentPage].choices){
+            createButton(choice[0], choice[1])
+        }
     }
     
-    for(choice of myStory.intro.choices){
-        createButton(choice);
-    }
-    
-    
-    
-    
+    showStory();
     </script>
 
 
