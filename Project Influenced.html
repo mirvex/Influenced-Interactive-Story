@@ -11,10 +11,6 @@
 
     <div id="intro">
         <h1>Influenced</h1>
-
-            <p>
-                This is sample text that is meant to be sample text for our intro as currently i am too lazy to go and grab a quick intro to the story so i am creating this sample text to serve as sample text for the intro as a sample.
-            </p>
     </div>
 
     <div id="story">
@@ -31,19 +27,31 @@
     let buttonContainer = document.getElementById ('buttons');
 
     let history = ["intro"];
+
+    let aggressivePoints = 0
+
+    let heroicPoints = 0
+
+    let cowardPoints = 0
+
+    
         
     const story = {
         intro : {
             text : "Offer available at participating U.S. Wendy’s for a limited time. Mobile purchase required. Offer must be redeemed via Wendy’s app or online order. Account registration required. © 2019 The Coca-Cola Company",
             choices : [
-                ["Example 1", ""],
-                ["Example 2", ""],
-                ["Example 3", ""]
+                ["Example 1", "test", 999, 0, 0]
+            ]
+        },
+        test : {
+            text : "Offer available at participating U.S. Wendy’s for a limited time. Mobile purchase required. Offer must be redeemed via Wendy’s app or online order. Account registration required. © 2019 The Coca-Cola Company",
+            choices : [
+                ["Example 1", "test", 999, 0, 0]
             ]
         }
     }
     
-    function createButton(buttonText, choice){
+    function createButton(buttonText, choice, agr, hero, cow){
         let button = document.createElement ('button');
         
         button.innerHTML = buttonText;
@@ -52,6 +60,10 @@
 
         button.addEventListener ('click', function() {
             history.push (choice);
+            aggressivePoints = aggressivePoints += agr;
+            heroicPoints = heroicPoints += hero;
+            cowardPoints = cowardPoints += cow;
+            console.log(`Coward: ${cowardPoints}, Hero: ${heroicPoints}, Aggro: ${aggressivePoints}`)
             showStory();
             })
     }
@@ -74,7 +86,7 @@
         }
 
         for(let choice of story[currentPage].choices){
-            createButton(choice[0], choice[1])
+            createButton(choice[0], choice[1], choice[2], choice[3], choice[4])
         }
     }
     
