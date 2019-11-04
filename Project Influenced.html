@@ -39,13 +39,13 @@
     const story = {
         intro : {
             text : `This is sample text for the first part of the story.`,
-            choices : [
+            decisions : [
                 ["Example 1", "test", 5, 0, 0]
             ]
         },
         test : {
             text : `WENDY'S DISCLAIMS ALL LIABILITY WHETHER BASED IN CONTRACT, TORT (INCLUDING NEGLIGENCE), STRICT LIABILITY OR OTHERWISE, AND DOES NOT ACCEPT ANY LIABILITY FOR ANY LOSS OR DAMAGE (DIRECT, INDIRECT, PUNITIVE, ACTUAL, CONSEQUENTIAL, INCIDENTAL, SPECIAL, EXEMPLARY OR OTHERWISE) RESULTING FROM ANY USE OF, OR INABILITY TO USE, THE SITE OR ANY OTHER WEBSITE, OR THE MATERIAL, INFORMATION, SOFTWARE, FACILITIES, SERVICES OR OTHER CONTENT ON THE SITE OR ANY OTHER WEBSITE, REGARDLESS OF THE BASIS UPON WHICH LIABILITY IS CLAIMED AND EVEN IF ANY MEMBER OF THE WENDY'S GROUP HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH LOSS OR DAMAGE.`,
-            choices : [
+            decisions : [
                 ["Example 1", "", 0, 5, 0]
             ]
         }
@@ -85,7 +85,7 @@
             buildStory(story[page].text);
         }
 
-        for(let choice of story[currentPage].choices){
+        for(let choice of story[currentPage].decisions){
             createButton(choice[0], choice[1], choice[2], choice[3], choice[4])
         }
     }
