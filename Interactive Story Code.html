@@ -29,10 +29,24 @@
         <p>“Alright, back on topic,” said Tylinus, “What's the plan for Virba.”</p>,
 
     </div>
-    <script>
-    
 
-        let exoPath = `Kaina sighs and looks towards Tylinus, “What kind of specializations do we need for this one.”
+
+    <div id="buttons">
+
+    </div>
+
+
+
+    <script>
+const exoPath = {
+    Decisions : [
+        ["Accept contract", "heoPath0"],
+        ["Force everyone to take contract", "agrPath0"]
+        ["Decline contract", "cowEnding1"]
+    ],
+
+    exo2 : {
+        text : `Kaina sighs and looks towards Tylinus, “What kind of specializations do we need for this one.”
 “Details are scarce, but all we know is that the client wants the VIP kicked from his position in his dictatorship.” explained tylinus
 “They want him dead or alive?” asks Wenter
 “Either or…” Tylinus started
@@ -64,8 +78,28 @@ The console said, “Hello, Tylinus, and welcome to Virba, please wait while we 
 As they headed towards the exit, a console in the wall said, “Here is your ticket for proof of ownership for you craft. Right now, you are entering Portra Park.” a little slot dispensed a tourist pamphlet and Kaina receives it. As it was naming more places and hotels to stay at, the crew were already walking away. When they reached the surface, they were surprised to find that the “Park” they were presumably supposed to be at, was nothing but flat concrete. Gray fog limited the vision so much that you couldn’t see more than 15 feet in any direction.
 “Some park.” retorted Rugasus. “What are supposed to do just walk.” Upon saying this,  he realized that the other three were already walking ahead of them. He gave an expression of disappointing realization and moved to catch up with the group.
 
-The crew were walking when they spotted some buildings up ahead, “So there is a city here after all.” said Rugasus. When they reached the street, it was wide enough to fit 4 lanes of traffic going both ways, but not a single car occupied even a parking space. The lights continued to control traffic despite its absence. The skyscrapers that ran along the sides were lacking any form uniqueness, no lights, no signs, just gray concrete and tinted glass. A man was walking in the opposite direction of the crew, looking as disorganized as a file drawer stuffed with too many papers.`
+The crew were walking when they spotted some buildings up ahead, “So there is a city here after all.” said Rugasus. When they reached the street, it was wide enough to fit 4 lanes of traffic going both ways, but not a single car occupied even a parking space. The lights continued to control traffic despite its absence. The skyscrapers that ran along the sides were lacking any form uniqueness, no lights, no signs, just gray concrete and tinted glass. A man was walking in the opposite direction of the crew, looking as disorganized as a file drawer stuffed with too many papers.`,
+         Decisions : [
+            ["ask for directions", "heoPath1"],
+            ["Have everyone take your lead", "agrPath1"],
+            ["Split up", "cowPath1"]
+        ]
+    },
+    exo3 : {
+        text : `Upon arriving at the bar, it had more character than the outside could ever become. The yellow neon lights highlighting the walls, tables with polished wooden finishes, and T.Vs lining the bar showing the latest products from the A.N.T. Sugar Glass, and an unoccupied stage with curtains drawn..
+“Hello there, what can I get you four?” asks the Bartender.
+“Just waters all around would be fine.” said Tylinus 
+“Ahh, that’s boring,” said the Bartender, “suppose you waiting for someone?”
+“Guess you could say that.” Rugasus said not fully paying attention.
+The bartender scratches his beard and simply answers, “Alright.” The four find a table and sit down around.
+“Don’t suppose you could give us some info about the client.” Rugasus said.
+“We ain’t got much, just said that we'd meet him here.” explained Tylinus
+“What do you mean,” argues Kaina, “I thought we don’t take vague contracts. This could be a trap for all we know.” Right on que, the curtains of the stage opened dramatically.
+“You truly z’ink ve vould treat our guests so poorly.” said the man on the stage. He wore dark blue robes with matching pants, white gloves, dress shoes, a hat with an outlandish design, and an umbrella in his hand. Music had started playing upon his entrance. “I’m sure j’ou had already been exposed to ze unique horrors zat zis city had been plagued by.” said the man extravagantly. The Bartender had started to pre-fill drinks.
+“Oh yeah,” said Rugasus leaning back in his chair, “What might that be?” 
+The man smiles elegantly and raises his hands above his head and yells, “Expression!” Just then, the doors swung open and people began to fill the bar at an alarming rate. The man raises the end of his umbrella to mouth, “Individuality, uniqueness, character, but most important of all, it’s just no fun.” The crowd cheers to his presence. “I vill not sit here and vatch zis, my city, fade avay into obscurity, so ladies and gentlemen, I present to you our main event.” A band quickly assembles on the stage and begins to play vigorously. “The men and vomen here see ze consequences as negligible, and here tonight they vill spill zere heart and soul into zeir art. So sit back, relax, and release every ounce of pent up energy have into zis night!” The crowd cheered again and form a dance floor in the center of the bar and begin to dance wildly. The crew stand up trying to see over the crowd but get separated.`,
 
+<<<<<<< HEAD
 let agrPath0 = `Talk envelops the group soon after and it was interrupted almost as fast as it started by Kaina stating, “Fine I’ll do it myself, it’s not like I need your help anyway.”
 Tylinus tries to calm Kaina down, “No, we need to go as a team, we can’t go alone if the reward is this high, too risky. Me and Rugasus will go with you” Rugasus looks towards tylinus showing that he didn’t want to be dragged into this.`
 
@@ -77,25 +111,680 @@ let cowPath0 = `“Look, we already had to deal with reality shifters and zombie
 let endThatsIt = `Upon passing up the contract, there is no story to tell. Like, really, the filler doesn't even start until the next game. The only thing we can say is that they got bored and left. Nothing, no fight, no conflict, no interaction. So here is your reward, the one ending you don’t have to beat the game for.`
     
 let heoPath0 = `Talk envelops the group soon after and it was interrupted almost as fast as it started by Rugasus stating, “Forget it, lets just go.”
-“Well that was a quick 180, have I influenced you that much.” Kaina retorted.
-“First, your statement is invalid, second, shut up.” Rugasus said back`
+=======
+        Decisions : [
+            ["Do Nothing", "heoPath2"],
+            ["Fight", "agrPath2"],
+            ["Resist", "cowPath2"]
+        ]
+    },
+    exo4 : {
+        text : `Just then, the doors were blown down and men in gray suits with clubs and sidearms stormed the bar. Another slightly more decorated officer shot into the air and yelled, “That’s enough, arrest them all!” Kaina was dropped onto the floor as the people scrambled.`,
 
+        Decisions : [
+            ["Draw weapons", "agrPath3"],
+            ["Follow his suggestion", "heoPath3"],
+            ["Surrender", "cowPath3"]
+        ]
+    },
+    exo5 : {
+        text : `Rugasus was already busy getting into slugfests with the Gray-suits and Koiraze was hitting them with the dull side of her sword.
+Tylinus linked up with Kaina said to the man from the stage, “What’s going on.”
+The man replies, “zey are here to crash my party.”
+A Gray-suit approached them and said, “Surrender yourself, you have no right to be here!”
+“Ah, but alas, it vould seem zat I have my right, right here-” said the man. The gray-suit gave a confused look for a split second before being thrusted upon by the end of the man's umbrella and being subdued by the butt end of it. The man calls out to the rest of the group, “Come, my friends, zis vay!” Rugasus and Koiraze fell back towards the back exit. Before the gray-suits could catch up, the man opened his umbrella and flashed them with more than 10,000 lumens, he then retreated and closed the door and proceeded to barricade in with a nearby shelf.
+The crew were running down an underground canal, lit only by an open flame lantern carried by the man. Rugasus asks, “Who are you?”
+The man responds, “The names Brozuire, and I vill be your client for today.”
+“What?” said Kaina.
+“I vill explain later, first ve need to make sure ve lose ze heat, zen I vill explain everything ven I deliver j’ou to headquarters.” Brozuire said hastily.
+
+A door opens in a dark room and the foggy light flows into it. Brozuire peers around the frame for a moment and said in a hushed voice, “It is clear, go!” The crew go in with Brozuire going last and shutting the door and hanging the lantern on the wall. He then walks up to the door on the opposite side and bangs on it multiple times. A voice said, “Yes, can I help you?” 
+“You know, you could’ve done your part in taking out ze trash, but I don’t need your help, I can do it myself!” yelled Brozuire. They waited a bit to see what would happen, then the door opened and a child no more than 13 peered out.
+“Brozuire,” said the child, running up to hug him.
+“Awww, did I scare you little Frenta.”
+“Y-Yeah, I heard what happened, we were so worried.” said Frenta
+“It’s okay, I'm here now, now vhere is your sister, ve have important business to attend to.” whispered Brozuire. 
+“Oh-This way.” pointed Frenta. Brozuire gestured to the group to follow. Inside, the crew observed a large scale operation being enacted. Cars were being maintenanced, plans were being discussed, weapons were being stored, and food was being distributed. “In there.” pointed Frenta.
+Brozuire patted her head, “Good girl, now run along and spread ze news zat our VIP’s have arrived.” She nodded her head and ran off. Brozuire moved aside a curtain in a doorway and gestures again to follow. Heavy talk emanated from the room. Upon entering the room, a table showing the whole map of the city is seen in the center of the room, many people were around it debating plans and whatnot. A woman at the end of the table sees that Brozuire had entered.
+“Who are these guy’s Brozuire?” she said sternly.
+“Madame, zees are ze guest ve asked so graciously to be a part of our plans going forward.” explained Brozuire. The room is instantly drowned in chatter.
+The woman looks in interest, she then said, “This meeting is adjourned.” The crowd vacates the room. Only Brozuire, the crew, and the woman are left in the room. “So...sources say you are the legendary mercenaries.”
+“Well, that’s truly flattering, but what on what claims, what makes you so sure we are not just regular mercenaries?” interrogated Kaina.
+The woman stares for a moment and answers, “You guys were the ones that put a stop to the B.U.B.B.L.E Rogue.”
+“Well-” Kaina said.
+“And you were the ones who took down Viridian and restored Fallen’s power.” remarked the woman.
+“These are some pretty bold claims, but everyone knows that the FFORMLESS FFEAR took care of both of those.” counters Kaina.
+“Their files would say otherwise.” retorts the woman.
+“This is ridiculous,” said Rugasus slamming his hands on the table, “there’s no way you could have access to FFORMLESS FFEAR files.”
+“Well they were pretty easy to get a hold of.” said the woman.
+“How?” asks Tylinus
+“After a little legal argument after Fallens power was lost, a lot of files were declassified, including the ones mentioning the individuals cleaning up all their messes.” The crew bowed their heads in disappointment.
+“Whatever the case, who are you, and what do you want?” asks Rugasus sternly.
+“Vell, allow me to introduce you to ze leader of ze resistance group Formatia, Lytheys.” Brozuire remarked.
+“And we would want you to work with us in toppling the man at the top of the hierarchy, Jotaque, from power.” finished Lytheys. 
+They all stared at one another for a moment, and Rugasus said, “I guess, we came this far for how much?”
+“Ve are villing to offer a 350,000 Rulta, for your services.” answers Brozuire.
+“Well I’m game,” said Kaina, “What’s the plan?”
+“First things first,” Lytheys responded, “You two, take off your masks.” She was pointing towards Koiraze and Kaina. The crew cringed at the idea of having Kaina take off his mask, especially in the presence of a woman. “I need to be able to trust you, show me who you really are.” explains Lytheys.
+Koiraze takes off her mask and said, “Anata ga anata no jinsei no saidai no kutsujoku o kanjitainara, watashi no gesuto ni naru. (if you wish to feel the greatest humiliation of your life, then be my guest)” She then proceeds to leave the room.
+“What did she say?” asks Lytheys 
+“Oh, we don’t know.” responded Rugasus, “what we do know is that you don’t want Kaina to take off his mask, especially in the presence of a...feminine figure”
+“What do mean, explain?” ordered Lytheys 
+“It’s not particularly something we would like to explain in this professional setting.” explained Tylinus.
+“I don’t care about the reason, we are short on time and I need people I can trust, you want your payment, then take off the mask.” commanded Lytheys. Rugasus and Tylinus both nod agreement to Kaina and head over to the other side of the table.`,
+
+        Decisions : [
+            ["Take off mask", "heoPath4"],
+            ["Come up with an embarrasing excuse, cowPath4"]
+        ]
+        
+    },
+    exo6 : {
+            text : `A few days had passed, and the time had come for the plan to be put into action. Kaina was awaiting for his role to be called when it became apparent that they were dangerously close to being behind schedule. Kaina went to Brozuire for answers.
+“Ve are ready to go, but it vould seem zat Lytheys has spent a little more time zan usual at ze top of ze clock tower.” replied Brozuire.
+“Why there?” asked Kaina.
+“It vas apparently built by her father, she even helped vith a brick or two.” answered Brozuire. “Perhaps you can fetch her for me, our vindow is closing fast, and ve vill need our leader leading ze operation.”
+“Got it.” Kaina said as he unholsters his lever actions and uses the recoil of firing them periodically in order to fly.
+“I have not seen zat ever in my life.” Brozuire said as he watches a physics defying man flying off into absurdity. The clock tower was not hard to spot as it was a different building architecturally compared to the rest of the city. It was unfinished, and a large portion of the roof was missing. Kaina flew into the opening and slid across the wooden floor. He looked around and found Lytheys sitting down at the edge of the tower, observing the non-active city.`,
+
+        Decisions : [
+            ["Approach with empathy", "heoPath5"],
+            ["Approach with anger that the job is being ignored", "agrPath4"],
+            ["Approach with no real idea what to say", "cowPath5"]
+        ]
+
+    },
+    exo7 : {
+        text : `Upon observing the target area, the plan was already in jeopardy. A large white and blue building towers over the area, looking down at anyone who glances at it. It widens as it gets to the base, with guards covering every occupiable space around it. The roads leading into the building were still made of dirt and mud with tractors and dump-trucks regular working the road. A convoy of trucks ran through and stopped at the entrance.
+“Zis is not vhat’s supposed to happen.” said Brozuire scouting the area on top of a dirt hill with the reflective side of his umbrella.
+“What’s the status?” urges Rugasus from below.
+“ze shipment vas supposed to be one of great importance, but zis is just a regular convoy.” explained Brozuire, not taking his eye off his umbrella.
+“What’s the difference?” askes Tylinus.
+“See, ze zing is zat ve know zat Jotaque is planning somezing big, he’s been ordering an absurd amount of material for it and all his scientific minds are in prioritizing it fruition,” explains Brozuire, “Ze plan vas for us to plant as much as vhatever ve call an explosive into ze various parts and observe ze violent dismantling of his vision. In due time, because of ze sheer size of ze project, ze failing economy of ze city vill do all ze vork for us and force Jotaque to fade into obscurity.”
+“So then where is the shipment.” asks Kaina.
+“I don’t know, ze shipment vas supposed to arrive approximately 50 minutes ago.” Brozuire said with urgency. 
+“Do we have any idea what this project of his is,” asks Rugasus.
+“Ve only got ze first half of it’s production name, it was named C3N-T1.” Brozuire answered. 
+“So what do we do now, we can’t sit here forever.” said Rugasus.`,
+
+        Decisions : [
+            ["Find Plan", "heopath6"],
+            ["Go in guns blazing","agrPath5"],
+            ["suggest to call off the entire operation", "cowPath6"]
+        ]
+
+    },
+    exo8 : {
+        text : `“Let’s hope this works.” said Tylinus. Kaina climbs into the cab, and retchs at the smell of gasoline and beer. Koiraze takes the front, sword drawn, Tylinus and Rugasus jump in the back, Rugasus with his akimbo SMGs goes behind cover, and Tylinus having his laser rifle scouting the front.
+
+The guards were walking back and forth when one asks, “Hey.”
+“Yeah?” asks the other guard.
+“You ever wonder why we’re he-” His sentence is then cut off by a yellow blast to the chest which sent him flying backwards.
+“What the, who-” The other guard is also hit with a blast. Lights began to saturate the atmosphere over the hill. A dump truck then leaps over it and rushes forward towards the entrance of the building.
+“Y’all ready!” yelled Kaina.
+“Got it!” yelled the rest of the crew.
+“Open fire on that truck.” said one of the guards. Immediately, orange streaks filled the air towards the truck. Koiraze deflects the bullets with ease with her sword, Tylinus, at the same time, laying down covering fire. The Guards duck out of the way as the truck goes up the ramp, hitting other vehicles and crates. Koiraze braces as her sword begins pink.
+“Taka sugiru yama wa arimasen (No mountain is too tall)” said Koiraze. She then slashes the air and the energy from the blade extends outward, putting huge holes in the entrance. The truck then crashes straight through what was left, dust, glass, and concrete spilling over onto the polished floor. The truck persisted to run straight through interior decorations, walls, and guards all the same. Rugasus fires upon those who reside behind their offensive. A guard with a rocket launcher then peers over a corner.
+“Watch out!” shouts Kaina as the rocket is fired. It explodes to the lower right of the truck, causing it to flip over on its side. As it slides, the crew immediately vacate the vehicle, jumping into the air. When the land, they start sliding on their feet and fire back at the enemy. They reach another hallway and run into it.`,
+
+        Decisions : [
+            ["Wander", "heoPath7"],
+            ["Interrogate personel", "agrPath6"],
+            ["Hold up in the nearest room", "cowPath7"]
+        ]
+
+    },
+
+    exo9 : {
+        text : `“Anata no hōhō wa hikōritsutekidesu, watashi wa sore o jibun de yarimasu. (Your methods are inefficient, I’ll do it myself.)” said Koiraze. Pink energy fills her blade again, she then sheaths her blade and does three quick slashes in and out. Pink lines go across the door and it begins the groan as the metal is then kicked backwards into four separate pieces all hovering in the air. 
+“Go!” ordered Tylinus. They each, one by one, slide through the gaps of red hot metal. Bullets were still flying in and once the last member got through, the pieces of the door whipped back into the same position they were in previously, locking out the guards. The crew got a handle of their surroundings and found themselves to be in a dark room.
+“Someone get the lights.” said Tylinus. Koiraze takes out her sword and the pink energy was enough to the crew to see each other.
+“You suck at driving.” said Rugasus to Kaina. 
+“Yeah whatever.” said Kaina. He then spots a lever and pulls it down. A loud mechanical whirring is heard in the room and the lights began to periodically turn on with a *puff*. Many machines are brought to life and begin to do calculations in the form of beeps and boops. Ventilation systems began to blow fresh air into the boxes of centipedes in controlled environments.
+Everyone holsters their weapons and look at all the various things of interest around the room, “Let's look for information we could use to help the cause.” said Tylinus. 
+A muffled explosion is heard from the door and the guards yelled, “Come on, someone get this door open!”
+“Hurry.” ushered Tylinus. Koiraze observes the centipedes in their containers, Rugasus skims the computer files and plays an audio log that details the days of a scientist growing increasingly frustrated with the work brought to him, and Tylinus finds a full file of the C3N-T1 plans.
+“Guys, you might want to take a look at this.” calls out Kaina. Rugasus and Koiraze come and observe the capsule that Kaina pointed out.
+“What’s that thing doing here?” asked Rugasus. Inside the capsule was a zombie, looking opposite of them. Upon sensing their presence, it turned around and began to violently bang on the glass to get out, its loud groans drowning out any other noise being made in the room. Kaina then unholsters his weapon and shoots it straight through the head. Its body hitting the floor with a loud thud.
+“What was that for?” asks Tylinus.
+“Put it out of its misery.” responded Kaina.
+“Well since you're done over there, come look at this.” said Tylinus. Kaina looks at the file of the C3N-T1 project. It’s full name was C3N-T1 PL3AD, and according to the specifications, it’s supposed to be bigger that the skyscrapers in the city by itself. Kaina plugs in a hard drive and began to download the files.
+“This thing is absurd, it serves absolutely no tactical purpose, why would he ever build this?” wonders Tylinus.
+“Perhaps his psyche has just a pinch of insanity.” jokes Rugasus. Tylinus finds that there was an unusual amount of unused space leading into a large door. The audio log gets to a part where the scientist begins to plan his escape and in its explanation, complete described what Tylinus found inside. 
+Kaina takes the hard drive out after the download finished, “We need to find a way outta here.” Kaina said.`,
+
+        Decisions : [
+            ["Take Tylinus's idea", "heoPath8"],
+            ["Blow a Hole in the wall", "agrPath7"],
+            ["Build defenses and camp", "cowPath8"]
+        ]
+
+    },
+    exo10 :{
+        text : `The guards at the door were feeling around with advanced stethoscopes, looking for weak points in the metal. Suddenly, one guard can hear the sound of a large engine turning on, and it was rapidly getting closer. “GET DOWN!” yelled the guard. The door was suddenly blown off its hinges with a large explosion and hits the two parts fall to the ground with the sound of heavy shredded metal skidding across the ground. The Guards flew backwards and out of the room, a peculiar looking looking tank as its cannon was unique. 
+“Alright, we’re getting out of here!” said Kaina, who was enjoying himself a little to much.
+“Why’d we let this guy drive again,” yelled Rugasus from the mounted turret, “he sucks at driving!”
+“Don’t worry, I got it!” yelled back Kaina as he proceeds to drive through the drywall of several rooms. “By the way, which way did we come from-” He cut himself off at the sudden realization that he had driven out of the side of the building that was facing a cliff.
+As the tank began to fall, Rugasus shouted, “This was not it chief!” He then got back inside the tank. Everyone started screaming while falling for more than 23 stories. They hit the mud on the ground with a considerably large *Boom*. After readjusting from the disorientation Kaina found himself to be in deep enemy territory. Construction mechs and guards were surrounding their position. Kaina noticed that the engine stopped and he tried to get it to work.
+“Come on now, I need you.” begged Kaina. The engine sprang to life again and Kaina advanced forward. Tylinus brought the turret back into the front facing position, hitting a guard on the head in the process. The barrel charged up with electricity and at full charge, blue gas enveloped it.
+“Why don’t you try this on for size.” exclaimed Tylinus. While Kaina continues to drive around sporadically, Tylinus fires the cannon and the sheer force of it was enough to send the top soil around its muzzle blast to fly back 15 feet. The round came out as a blue streak of light and goes through a construction mechs leg joint and hits a construction building, causing a cataclysmic explosion that brought down the whole thing.
+“Hello there,” said a voice, “and welcome to the Varsend Main Battle Tank-” Tylinus cut the voice off with another shot from the cannon, “Oh, well it would seem that you have already grown accustomed to using it already.”
+“Who is this?” asks Kaina.
+“I am a specially designed A.I. for this smart tank, would you like to see your current objectives.” said the A.I.
+“Objectives, just kinda winging it right now.” said Kaina.
+“Of course, by scanning your brain waves through the sensors of the wheel, I can generate a general idea of what you need to do,” explained the A.I., “Upon access of the security cameras, it would seem that a vital piece of your mission has been captured and is currently being escorted.”
+“What, who?” asked Kaina.
+“It would be the one you call Lytheys.” answered the A.I.
+“Lytheys, where is she” demanded Kaina.
+“Pinpointing…” said the A.I., “It would seem that they are currently heading down a hall in the third floor to the east,” Kaina was pondering, there is no way that she could’ve been caught so soon, especially without the presence of the resistance, “would you like me to place a waypoint and navigate?” asked the A.I.`,
+
+        Decisions : [
+            ["Save her", "heoPath9"],
+            ["Disregard her", "agrPath8"],
+            ["Retreat", "cowpath9"]
+        ]
+    },
+    exo11 : {
+        text : `Lytheys was being escorted by two guards when suddenly Kaina crashes in through a window and drop kicks the farthest guard and shoots the other.
+“Kaina,” exclaimed Lytheys, “what are you doing here?”
+“Well obviously I’m here to rescue you.” stated Kaina.
+“Your not supposed to be here,” said Lytheys, “I made a deal, he said that he would just capture them.”
+“Who?” asked Kaina confused.
+“I believe she is referring to me.” said a voice. A man came from the hall and wrapped his arm around Lytheys’s shoulder.
+“Jotaque,” said Kaina staring with cold eyes.`,
+        
+        Decisions : [
+            ["Shoot Jotaque", "heoPath10"],
+            ["Bargin with Jotaque", "cowPath10"]
+        ]
+
+    },
+    exo12 : {
+        text : `“They aren’t coming,” Kaina answers, “I told Brozuire to call off the attack after telling him we could handle it ourselves.”
+“W-What?” stammers Lytheys.
+“Ah, well that’s too bad, it would seem that our plan fell through.” said Jotaque with a disappointed face.
+“Your friends are fine Lytheys, come on we need to go.” said Kaina.
+Jotaque looked down upon Lytheys, waiting for her response, “I can’t,” she said, “I don’t trust you...I don’t trust myself.”
+“Well it seems we are all in understanding, allow me to go along my business.” said Jotaque. “But just in case, perhaps my associates can help you.” Large footsteps can be heard around the corner of the hall. Two heavily armoured guards with miniguns walk in and spin them up. “I’ll be seein’ ya.” said Jotaque. Kaina shoot one of the guards in the shoulder, creating a large spark to emanate from the impact. The guard simply looked at the impact point and proceeded like nothing happened. Kaina the dumped more rounds into them until one of them got annoyed and opened fire, the other followed suit. Kaina had barely enough time to use his lever actions to get out of the way as the hallway became chewed up with holes. The guards began advancing again and Kaina got up and ran as fast as he could. While running, Kaina came across a sign over a door that said escape pods. He barged inside and found two pods facing upwards. He sat himself inside and began the procedure to launch. The heavily armoured guard kicked down the door and normal guards rushed in, weapons drawn. 
+“There he is, stop him!” yelled a guard. They rushed over to the pod, but it already launched, leaving them all covered in smoke. The pod then sprouted wings upon leaving the guiding tunnel and the thrusters ignited, ripping the air from its resting place as it passed by. Kaina though he was in the clear when the fog below began to roll. An absolutely monumental airship rose out of the fog. Its black paint job and red sensors gave it the true look of menace.
+“Hostility detected,” said the onboard computer, “engaging self-defense protocol.”
+Kaina grips the joysticks hard and said, “Yeah, like it matters.” Kaina powered his craft to full and flew straight over the airship. It, in response, flew forward and turned around, creating a cut in the fog. Turrets emerged all over the surface of the airship, took aim at Kaina, and all fired simultaneously. Kaina looked back and began to do extreme evasive maneuvers, the tracers of the turret fire barely whizzing past him. He then dived below the fog in hopes of losing it, but the turret fire remained consistent in keeping him on the move. The airship then appeared below the fog and continued the chase. They were now in the city and Kaina though he could out maneuver in the skyscrapers. Unfortunately, the turret fire never ceased, even if was behind a building. The towers around the ship were now full of holes and Kaina was furious.
+“Alright, you want me, come get me.” Kaina said to himself. He then flew parallel to the airship and flew straight down a single open street. Brozuire was casually strutting down the street, whistling a tune, when Kaina’s ship roared past him, scaring him to death.
+“Vhat ze heck vas zat.” exclaimed Brozuire. He looked back in absurdity, but realized the shower of bullets also heading his way. He noticed a nearby woman walking down the road with headphones in. “Get down!” yelled Brozuire. He grabbed the woman, crouched down, and opened his umbrella to shield them. When it seemed to pass, they stood up again and the concrete they stood on was full of holes. The woman hastily thanked Brozuire and hurried off. Brozuire then looked towards the sky and sighed in absolute disbelief as he observed the skid marks along his umbrella.
+Kaina was now trying to lead the ship out of the city until he can come up with a plan to take it down. But before leaving the city limits, a blue streak coming from the ground lands a direct hit on the airship. A blue energy wave is seen deflecting the blast, but it is soon broken into pieces, which causes the whole airship to recoil from the blast. 
+“Looks like you need some help there, friend.” said a staticy voice from the computer.
+Kaina recognized it, “Tylinus?” he asked.
+“Yep,” answered Tylinus, “wish we could help you more, but we are dealing with some problems of our own.”
+Rugasus can be heard yelling while firing the mounted machine gun through the radio, “Go away, I don’t want to deal with your weaksauce.”
+“We’re gonna head your way,” explained Tylinus, “get these guys off us and we’ll be able to take that thing down.”
+“Or you could just drive straight!” yelled Rugasus.`,
+
+        Decisions : [
+            ["Fight Overseer", "agrPath9"],
+            ["Save Tylinus", "heoPath11"],
+            ["Fly away", "nopeEnd"]
+        ]
+
+    },
+    exo13 : {
+        text : `“What’s going to happen now,” demanded Lytheys. She was now in an office negotiating with Jotaque, “We had a deal!”
+“Yeah well now that deal is in shambles because you decided to call your little mercenaries,” said Jotaque sternly, “now they’ve taken over your whole operation and caused me a lot of trouble.” Lytheys looks down in defeat. “I will make sure that they will be crushed under the weight of my new glorious creation.” said Jotaque
+
+“You can’t,” pleads Lytheys, “so many people will be killed.”
+“I don’t have time to sort through the people to get what I want,” argued Jotaque, “no one has ever done this much damage and lived to tell the tale.”
+“Please,” begged Lytheys, “At least give them time to get away.”
+“No, you listen here, I will not be delayed any longer,” exclaimed Jotaque, “If you care about them so much, sort them out yourself.” Jotaque then leaves the room. Lytheys is left to ponder her decision.
+
+Tylinus, Rugasus, Koiraze, and Kaina all wait along the flat concrete of Portra park, the fog a little clearer that day. A ship then descends from the sky, carrying the main battle vehicle of the mercenary group, the Taika Walker Mo. Su-11. The walker is laid on the ground, its four legs creating cracks on the ground and  its hydraulics activating to keep it steady. From the ship above, rapple lines dropped in front of the crew and Ferelia, Wenter, Yveta drop down with the rapple.
+“Hey, everyone isn’t here.” said Tylinus concerned.
+“You sure?” teased Ferelia. She looked back up towards the ship and two more people were rappelling down it. It was Sirese and, the one Tylinus had been looking for, Afreimus.
+“Hey guys, whats up?” asked Afreimus. Tylinus simply walked over to her and gave her a hug. She was blushing slightly.
+“I missed you.” whispered Tylinus into her ear.
+“Nice to see you too, I guess.” said Sirese from the side. Tylinus ignored her and released Afreimus from his embrace.
+“First order of business,” said Wenter, “This C3- whatever, it’s a big thing that we have to destroy right, think the walker will take it down?”
+“vell if it vas, ve vouldn’t need to call upon ze rest of you.” said Brozuire from a distance. He was walking towards the group from the fog. “To be honest, I vish zat I could blame everything zat happened in ze past few days on you, it would make me feel so much better.” The group looked at him waiting for the rant to continue. “But I cannot do zat, for I have seen ze kind of person zat Lytheys molded herself into. She is ze one zat vould find ze answer to benefit ze majority, even at ze cost of her own dignity and following.”
+“And your point is what, Mr sir?” asked Wenter.
+“Vhat I am saying is zat you have ze full support of our resistance at your command, despite the loss of our leader, ve vill continue to fight for vhat ve believe in. She vas ze one zat brought us all together under a single idea, to see our home fill will color again. And now it is our turn, ve vill show her zat ve are villing to achieve her vision at any cost, so zat our future generations may enjoy a time zat ve all remember so vell.”
+The crew look to each other in understanding, “What are your numbers?” asked Rugasus.
+“Ve hold 43,000 strong.” states Brozuire.
+“Alright, things are gonna get dicey up here, so we need you to evacuate the city as best you can,” explained Kaina, “ door to door, in and out, send them underground if you have to.”
+“J’ou got it.” compiled Brozuire, hurrying to get everyone together.
+“Hold on,” said Tylinus, throwing a radio to him, “call us if your having difficulty completing your mission.” Brozuire nodded and headed off to HQ.
+“We’re gonna need a plan,” said Kaina, “Jotaque won’t reveal himself so easily.”
+“Hey, you!” said a Gray-suit, who had supposedly snuck up on them with a simple jeep. “Are you demonstrating.”
+Sirese began to advance towards him, but was shortly stopped buy Kaina blocking her way with his lever action. “So what if we are?” responded Kaina. 
+Unnoticed by anybody, Koiraze gets a message on her arm monitor saying, “We don’t have much time, if you want to cash in on that opportunity, you’ll have to go now.” She looks around and walks into the station, fading into obscurity.
+“Then I’m gonna have to ask you to come with me.” said the Gray-suit, pulling out his side arm and walking closer. Upon closer inspection, Kaina recognized the man as the one who gave him instructions on how to find the Farland bar. “This is Varka to HQ, we got a couple of unrulies here in Portra, please send reinforcements.” He walks up directly to the group pointing his sidearm in their general direction, “Alright come on, your all coming with me.” The crew all look at each other, then back at the guard. “Well…?” he said.`,
+
+       Decisons : [
+           ["Capture him", "heoPath12"],
+           ["Shoot him", "agrPath10"],
+           ["Get him to leave", "cowPath11"]
+           
+       ] 
+    },
+    exo14 : {
+        text : `“I wouldn’t hope so,” radioed the Intern, “most elite groups left the area when the city couldn’t pay the bills.”
+“Alright then,” Kaina said, “go back over head, we’ll need to keep your eyes open for any more threats.” The ship then flies back up into the sky, being consumed by the fog. “Tylinus, Wenter, Sirese, and Ferelia, you all go in the walker, Rugasus and I will take the tank, and I want Afreimus and Yveta scouting on the roof tops.”
+“I’m the one usually making the orders,” said Tylinus, “But I can’t argue right now I guess.” The designated crew proceeded to board the walker. Kaina and Rugasus boarded the tank and turned on its engine.
+“Mind givin’ me a ride.” asked Yveta.
+“Yep.” answered Afreimus. Yveta puts her hand on Afreimus’s back while she draws her compound bow. The string is then ignited with blue magic which spreads throughout the entire bow. She aims towards the top of a building and fires. After a few seconds, they both disappear in a flash of light. 
+“All right, let's get to work.” said Tylinus inside of the walker, activating it and the walker raised from its slumped position and faced forward, steam expelling from its seams.
+
+A squad of cars drives up on the edge of the flat concrete of Portra park, armed guards exit them and proceed towards the center.
+“HQ, team gouda has arrived at the site of question, preparing to engage.” radioed one of the guards.
+“Confirm team Gouda, please state the current threat level.” radioed HQ.
+“Await further evaluation.” radioed back the guard. The guards then stop advancing when the ground starts to shake. They look forward to see that the fog is illuminated by seven yellow lights, and they were getting closer. The walker makes its presence known by stepping right over the guards with its four legs just barely managing to miss. The tank rushes by shortly after and guards shoot at the vehicles with little to no effect.
+“We have a threat level of absolute,” yelled one of the guards into the radio, “I repeat, absolute!” The walker walks straight down a street with the tank leading the assault. Guards showed up around the intersection and the walker and tank unleashes everything they have, creating as much chaos as possible. Cars came, when those blew up, the mechs replaced, the mechs with other tanks, the tanks with helicopters. After a while, the forces began to retreat.
+“I’m seeing a lot of their forces move back and scatter,” said the Intern over the radio, “they could’ve been a real problem even though their only training and motivation is work harder for more money.” The walker stops itself at an intersection and observes the area. A metallic screech fills the air all around, and a chill goes down Kaina’s spine.
+“What was that,” asked Wenter over the radio. The atmosphere gets unusually quiet, as if the air stood completely still, afraid of what it sees. A shadow flowed through the fog to the right of the walker. The clacks of metal against the road could be heard as it got closer. The shadow flowed to the front of the taika walker, keeping its distance. It grew taller and taller, jolting around its sides as it climbed.
+“You will all pay for humiliating me in such a manner,” said Jotaque through a speaker, “you will all be annihilated under the power of my regime!”
+“Whatever, I’m not waiting for this.” proclaimed Tylinus. He aimed the giant guns of the walker towards the shadow and fires. As the bullets sink into the fog, blue flashes highlight the shadow even more, giving it an insect-like structure. The blue pulses dispel the fog around it revealing its full metallic structure. Lots of legs ride along either side of the mechanized monstrosity, all pale yellow in color, clinging deep into the nearby skyscrapers with cracked glass showing that they were not gentle in their stride. The main body was coated in brown sections and seemed to run on for hundreds of feet. At the head were pincers and a large ocular sensor housing the cockpit of the mech designated as C3N-T1_PL3AD. It made the walkers four-story height seem like a spider face to face with an apex predator many times bigger than it. It began to make an astronomically loud whirring sound, increasing in pitch as it charged, curling up as it did so. 
+“Oh crap.” said Tylinus. The mech then lurched forward and released a mechanized screech that sounded like several feet of sheet metal being scraped together and a hint of computer beeps. Bolts of electricity were arching to the nearby buildings and destroying the surface of them as it released its energy. 
+“Time to go.” said Kaina flatly, turning the tank right and rode off at full speed, the walker turned left and did the same. The C3N-T1_PL3AD showed insect like behaviour and showed more interest in the walker by facing it as it tried to get away. The walker got a ways away before the C3N-T1_PL3AD began to give chase. It rushed forward with its lower sections moving side to side like a snake, chirping its sound of hostility as it got closer. The walker tried its best, but the C3N-T1_PL3AD surrounded the walker with its body, smashing through buildings and damaging roads as it did so.
+“We’re surrounded,” exclaimed Sirese, “all possible exit routes are shut down.”
+“Then we defend ourselves,” said Tylinus, “fire everything we have at it!” The large machine guns the size of street poles fire without pause, lots of tiny missiles launched from the back and propelled themselves towards the C3N-T1_PL3AD. Every shot falling short as the blue energy catches every shot and every explosion not even getting dust on its exterior. The C3N-T1_PL3AD then lunges with its pincers, but the walker makes a quick jump to the side. It tries again, but to the same result.
+“You’re annoying,” yelled Jotaque, “I’ll end this now.” The six frontmost legs begin to glow orange, with the veins of components inside showing through its shell. As it geared up to slam the ground, a blue streak strikes the C3N-T1_PL3AD at the blocked street directly in front of the pilot cabin. It reeled back as if it were getting pushed around and chirped in annoyance. It looked forward and noticed the tank gunning it straight towards them.a
+“I’ll show you what for!” shouted Rugasus.
+“Fire” yelled Kaina. The tank shoots again, its blue shell landing another hit on the body which is also reflected but shows that the shield struggled more to stop it. The C3N-T1_PL3AD chirps in frustration and proceeds to slam the ground, sinking its legs into it and the orange energy is transferred into the ground and disappears.
+“Kaina, watch out!” yelled Tylinus through the radio. Kaina and Rugasus saw the ground around them begin to glow orange and bulge outwards. They quickly vacated the tank and got a far distance away before the ground explodes, causing dust and smoke to reach far into the sky and shattering all of the nearby windows. The Taika continues firing and the C3N-T1_PL3AD quickly turns its attention to it. It reaches overhead and burrows its legs into the ground and creates trenches in the ground. The available standing ground then crumbles away into the trenches, bringing the Taika walker in with it. 
+“We’re buried!” exclaimed Ferelia. Everyone in the control center was trying to regain their balance when a leg pierces through the hull, inches from Sirese’s head. The C3N-T1_PL3AD seemed to be inspecting its prey that it took down when a purple laser causes it to change its focus again. It looks to the top of the right building that had supported itself on.
+“Up here buddy.” mumbled Yveta as she dumps more rounds into the C3N-T1_PL3AD from here sniper with no effect. From the center of its pincers, it began to charge electricity. The building to its left then glowed a bright orange and an orange streak then hit the C3N-T1_PL3AD square in the head, causing a rapid expanse of fire from its impact point. Its shield did not react though, and clear signs of damage were visible when the fire cleared and showed the metal warped and red hot. The C3N-T1_PL3AD reeled back and shrieked. On top of the building was Afreimus, charging her bow for another shot.
+“How,” demanded Jotaque, “how did you get through my state of the art shield-ARRGH-” Afreimus hits the C3N-T1_PL3AD with another shot in relatively the same spot, now showing the internals and sparking continuously.
+“Because magic.” answered Afreimus. Jotaque lost his cool and stabbed the side of the building with the legs of the C3N-T1_PL3AD and forced it forward, cleaving a gigantic section of the building off and sending Afreimus flying. She save herself when she fires a light blue arrow into the ground which caused her to bounce and land hard nearby. 
+“Afreimus, you alright.” radioed Tylinus.
+“Yep, I’m good, focus on getting out of there, I’ll link up with you later.” radioed back Afreimus.
+
+“Come on, we need to hurry and get that thing off their backs!” said Rugasus running on the opposite sidewalk of Kaina. Just then, a big and square man with a buttoned up trench coat and fedora casually walks through a wall with a blank expression and raises his arm towards Rugasus. He runs into it and the Librarian holds him up in a choke hold. “On second thought,” strained Rugasus, Kaina looking back to observe what happened, “go on without me, I’ll handle this gu-” He is cut off when he is thrown straight through a brick wall with the Librarian pursuing closely, his stomps shaking the earth slightly.
+Kaina is then also promptly distracted when Brozuire radios in, “Guys, I vould like some urgent assistance.”
+“What’s wrong.” radioed back Kaina.
+“I don’t know vhats gotten into her head, but she is laying siege at HQ and is preventing us from evacuating ze remainder of our forces.” radioed Brozuire.
+“Who?” radioed back Kaina.
+“Lytheys,” radioed Brozuire.`,
+
+
+        Decisions : [
+            ["Help Brozuire", "heoPath13" ]
+            ["Tell him to handle it himself", "agrPath11"]
+            ["Help Rugasus", "cowPath12"]
+        ]
+    },
+    exo15 : {
+        text : `The C3N-T1_PL3AD towers over the walker, dropping rubble from its legs as it prepares for its final blow. The crew were vacating the walker when they look up and see there’s no time to escape. 
+They all brace when the Intern radios in, “I see your having trouble down their, so thank me for sending in our biggest gun.”
+“Our what?” asks Tylinus. He then turns around and hears the sky screeching and a yellow trail appear in the fog. The fog then quickly moves out of the way as Darryl flies in at max speed, his red robotic eyes fierce with hostility. He brings one arm back, causing it to create a sound like that of a bass drum hitting two times followed by two flashes of light.
+“RRAAAAAGGGGGHHH!” yelled Darryl as loudly and fiercely as possible. A slight mach cone forms right before he hits the C3N-T1_PL3AD with a huge shockwave destroying all the glass of both building around it and causing them to cave in a little. The C3N-T1_PL3AD’s shield reacts violently with this impact, although protecting it, was helpless when the entire C3N-T1_PL3AD was sent backwards, shrieking in anguish. It slid for several hundred feet before squirming back onto its feet.
+“Alright! Now we have a chance!” exclaimed Wenter. Darryl scoffs at the fact that his super attack didn’t do much to damage the C3N-T1_PL3AD, so his jetpack charges up and roars, causing Darryl to rocket straight in to begin the intense battle of mechanized brutality. 
+“Come on, we need to find a way to help.” radioed Tylinus to his crew. Afreimus links up with the walker crew and follows their lead.
+“Hey, I’ll play air support, where’d you put the Strander.” volunteered Wenter.
+“Back at portra,” answered Tylinus, “but how are you gonna get there?” Wenter then breaks open the window of a nearby car, climbs in and hotwires it to start. 
+“I have my ways.” answered Wenter. He then drove off down the street, the tires skirting as he goes up to full speed.
+
+Rugasus meanwhile, is getting tossed around like a ragdoll. Upon regaining his footing, he unloads everything he has into the Librarian, but he continues to stomp towards Rugasus paying no mind to the fact that he is getting riddled with holes. When he got close, Rugasus attempted to fight him bare handed, but the blows mean nothing and he is scooped up by the neck again.
+“Rugasus,” said the Librarian, “You checked out 50 jokes that you can tell your friends 9 months ago, and I’m here to collect.”
+“Can’t you just put it on my tab,”asked Rugasus strainingly, “This isn’t the best time.”
+“You should’ve found the time months ago, now give it to me.” said the Librarian, throwing him onto the ground.
+“Rugasus, what’s your status?” radioed the Intern.
+“Currently getting thrown through walls by your idiot brother.” radioed back Rugasus.
+“Well you’re the one that decided to provoke him in order to complete that contract. You didn’t have to go off investigating why children were ending up getting beat up when in correlation to not turning in books.” radioed the Intern casually. Rugasus then hears a familiar battlecry outside. He looks out the window and sees Darryl slugging it out with the C3N-T1_PL3AD, each subsequent hit followed by Darrly’s warcry. “What are you gonna do now?” radioed the Intern.
+Rugasus continued to look out the window and observed the fight outside, “I got an idea.” muttered Rugasus. He gets up and starts to spray the Librarian with bullets. He just walks forward, advancing on Rugasus. Rugasus then jumps out the window and falls hard from the second story. He struggles to get back up while the Librarian follows suit and lands on his feet with a loud thud. Rugasus then runs as fast as he could to the C3N-T1_PL3AD.
+
+Kaina flies in front of the HQ and lands. Observing the situation, he sees a mech that was about two stories tall being piloted by Lytheys. It had an open cabin with a machine gun as one hand, and mechanical hand as the other.
+“S-Stay back,” ordered Lytheys, shooting at no one in particular, “this is the only way I can keep you all safe.”
+“Ve don’t need your protection,” said Brozuire ducking behind cover, “you have to trust us Lytheys.”
+“No!” said Lytheys half sobbing, “He will kill you all, I have to be the one to make sure that you all stay safe.”
+“Vell you are currently blocking our only exit out of ze city!” yelled Brozuire.
+“NO!” screamed Lytheys, “You’d never make it out in time.”`,
+
+
+        Decisions : [
+            ["Approach with logic", "heoPath14"],
+            ["Approach with arrogance", "agrPath12"],
+            ["Do not Approach", "cowPath13"]
+        ]
+    },
+    exo16 : {
+        text : `The C3N-T1_PL3AD crashes straight through a skyscraper and lands on its back, Darryl closing in for the assault.
+“I...have had...ENOUGH!” shouts Jotaque, firing a continuous bolt of lightning, directly hitting Darryl, and sending him flying back into the ocean. “Finally, now where did you little ants go.” A pink flash zips through the street and rides up a building over the C3N-T1_PL3AD.
+“Hey, up here stupid.” said Sirese looking down upon the C3N-T1_PL3AD. It looks up to her and aggressively chirps. It starts to climb up the building, its legs digging deep into it leaving glass and concrete to fall to the city floor below. Upon reaching the top, the C3N-T1_PL3AD stood over Sirese and poised itself for attack. All Sirese did was look up towards it, crossed her arms, and smirked. The C3N-T1_PL3AD slashed at her, but in a pink flash, she was now to the side of where the attack landed, in the same pose. This happened a couple more times, creating more rifts in the ceiling. The C3N-T1_PL3AD then looked very annoyed, Sirese just chuckles at it as it struggles to get a hit. Just then, Sirese happened to go over a structurally unstable area and loses her footing. The C3N-T1_PL3AD then takes this opportunity to inflict some serious damage. As it reached over to skewer Sirese, she reaches her hand out to the leg and a pink energy envelops it. Its forward momentum is completely diminished and it slumps onto the roof, while Sirese charges up with the energy and glows brightly. Then in a pink flash, she runs loops down and around the C3N-T1_PL3ADs body, dropping an explosive in regular intervals.
+“Hope this doesn't cause you to break up too much.” said Sirese on the city floor, triggering the detonator. In seconds, the C3N-T1_PL3AD is covered by the fires of the explosions, revealing the blue energy of the shield running all the way through its body. This happened within seconds and the C3N-T1_PL3AD was stunned but not majorly damaged. Sirese runs up the spine of the C3N-T1_PL3AD and jumps over its head.
+Midair she said, “Alright, lets try this aga-” She is cut off when she is caught in midair by the pincer of the C3N-T1_PL3AD with a loud clang. “I guess not.” stated Sirese simply. Electricity flows through and crackles the pincers and shock Sirese. The C3N-T1_PL3AD then shrieks into the air and swung its head to throw her into the glass of a nearby building. Upon doing this, the building loses its support and crumbles, bringing the C3N-T1_PL3AD back to the ground.
+
+Inside the interior of another building overlooking the C3N-T1_PL3AD from a close distance, Rugasus is running across an office floor when a hand shoots out of the ground and catches his foot. The Librarian jumps through the floor and carries Rugasus by the foot.
+“I will not tolerate the irresponsibility of anyone that visits my library.” stated the Librarian as he tosses Rugasus through many office cubicles. On the other side, he slides into Yveta’s and Ferelia’s.
+“Hey,” said Rugasus weakly, “what are you doing here?”
+“I came to find Yveta, what are you doing here?” asked Ferelia
+“Nothing special,” responded Rugasus, “Just dealing with library troubles.” They both look at Rugasus in confusion. Just then, the Librarian walks through a support pillar, uninterested in the concrete and rebar shattering in his wake. Yveta and Ferelia immediately engage the Librarian with rifle rounds and fireballs, but he just keeps stomping his way over. He then takes Yveta’s weapon and punches her so hard that she slides against the floor with her legs up in the air for 10 feet, he then backhands Ferelia through a cubicle. Rugasus then charges the Librarian and stabs him in the abdomen with a knife. The Librarian simply ignores this and grabs Rugasus by the neck.”
+“Starting to think you enjoy this.” strained Rugasus.
+“I will not stop coming for you until I collect that which belongs in my library.” said the Librarian.
+“Well it’s going to be a while.” struggled Rugasus.
+“I will beat its location out of you if I have to, no one will have an overdue book for as long as I run a library.” said the Librarian. 
+
+Outside going unnoticed, the water was churning, and an unmanned destroyer was being sucked right into the center of the vortex.
+“This is getting annoying,” yelled Jotaque, “where are you all at, stop hiding from me cowards.” Multiple yellow streak then impacts the shield of the C3N-T1_PL3AD.
+“There you ar-” Jotaque is cutoff when a black arrow burrows deep into the superstructure of the C3N-T1_PL3AD. “ARRRGH, PESTS, ALL OF YOU!” yells Jotaque.
+“Yeah yeah buddy,” said Tylinus, “bring it over here so we can talk it out.” Jotaque growls at this and head towards them at full speed.`,
+
+        Decisions : [
+            ["agrPath12c"],
+            ["heoPath14c"],
+            ["cowPath13c"]
+
+        ]
+
+    },
+
+    exo17 : {
+        text : `Rugasus was being punched repeatedly in the face by the Librarian, and with the C3N-T1_PL3AD heading their way, things weren’t looking good.
+“Time to go Afreimus.” said Tylinus.
+“Right.” confirmed Afreimus while charging a teleport arrow. But before they have a chance to get away, Darryl is heard shouting his ferocious battle cry as he rockets straight towards the C3N-T1_PL3AD with a destroyer in his robotic hands.
+“What is that?” asks Rugasus right in the middle of being punched. The Librarian looks out the window to see the events unfold.
+“RRRAAAAAAAAGGHHH!” yelled Darryl in a furious fit of rage. He chucks the destroyer at the C3N-T1_PL3AD as hard as his hydraulics could go. The bow of the ship hits in the center of the C3N-T1_PL3AD and the shield is seen physically bending to the shape of the bow and it breaks like glass. The hull is pierced and it falls backwards into the building that Rugasus was in. The Librarian loses his grip and Rugasus lands on the floor gasping for air. The Librarian then regains his balance and walks over to Rugasus.
+“Hey, I left your damn book over there.” choked Rugasus. The Librarian turns around and finds an explosive. 
+He whips back around and said, “That’s not a book.”
+“You sure?” remarks Rugasus. The explosive detonates and the floor collapses, taking the Librarian with it. He falls straight down through several floors and is crushed by the C3N-T1_PL3AD as it falls from the attack from Darryl. “Coulda swore it was.” finished Rugasus. The C3N-T1_PL3AD rose its head up and used its legs to pull out the destroyer out of its chest like a sword. Darryl scoffs at it and shoots rockets out of his arms towards whatever was left holding up the rest of the building. 
+“Couldn’t he wait until we get off the building!” exclaimed Rugasus. “You two, get up, we gotta get outta here!”
+“Where?” asked Yveta.
+“We’re gonna jump.” answered Rugasus. 
+“You gotta be kidding me.” said Ferelia.
+“Either that or you become part of the mass that’s used to crush that thing.” said Rugasus. They all begrudgingly jump out the windows as the building begins to lean and start yelling as the fall down. Then the Strander 2-V shows up out of nowhere dives after them. It stays a steady amount of distance in front of the falling crew and the loading bay opens up and three whips of dark blue energy wraps around all three of them and pulls them inside. It then tries to pull up as hard as it could and successfully levels out before it hits the ground. The disoriented crew then look towards the cockpit and find Wenter piloting it. The building falls straight onto the C3N-T1_PL3AD, burying it.
+“Heck yeah,” cheers Wenter, “Wenter ex machina, lets go!”
+“Wenter, I need your help over here,” radioed Kaina, “Formatia HQ”
+“Got it, on my way.” Wenter radioed back. Upon arriving, he saw Kaina limping towards Lytheys in the plaza. He lands near him and lowers the bay doors down and Rugasus, Yveta, and Ferelia walk out and observe what happened.`,
+
+        Decisions : [
+            ["exoHeo"],
+            ["exoCow"],
+        ]
+    },
+    exo18 : {
+        text : `A blue arrow hits the ground and Tylinus and Afreimus both teleport to that spot. Tylinus asks, “your think that things taken down?”
+“Willing to bet that it isn’t.” said Winter from afar.
+“We will have to go check either way, we can’t take any chances.” said Kaina. Just then, the C3N-T1_PL3AD burst out of the rubble and screeched in hostility.
+“Oh good,” said Wenter, “We don’t have to check.”
+Jotaque goes on his speaker and said, “I will never accept defeat, for as long as I control the Centiplead, I will never stand dow-” 
+Darryl then teleports with a *BZOOM* in the middle of the group and yells, “DUST THIS BITS!” The entire crew then fires their weapons at the C3N-T1_PL3AD. Darryl with lightning out of his arm connon, Tylinus with lasers, Rugasus with SMGs, Kaina with lever actions, Wenter with an Ancient Architect rocket launcher, Ferelia with flames from her hands, Yveta with a sniper, Afreimus with magic arrows, and Sirese whips in from around the corner in a streak of pink energy and shoots with her dual pistols, her clothes and hair charred.
+“Where have you been?” asks Tylinus. 
+“I got chucked through a building what’s your excuse.” said Sirese. The silhouette of the C3N-T1_PL3AD rose above the crew behind the smoke.
+“Come on, I’m ready for you.” said Tylinus. Electricity shot out from the smoke and hit Darryl, sending him flying into a building. The impact spread electricity to the rest of the crew, crippling them to their knees. The C3N-T1_PL3AD closed in, it was clearly barely functioning as in was struggling to walk, sparks were flying everywhere, and its external shell has been extensively removed. 
+“Finally, I’ll end you all in one shot.” said Jotaque as the C3N-T1_PL3ADs legs glowed with orange energy once more. “You have all failed,” said Jotaque, “this time, you die!” Before he could slam the ground, machine gun fire hits it all over the ocular sensor, causing it to reel back. The strander had come back and was firing machine guns and a plasma cannon at the C3N-T1_PL3AD. It was taking heavy damage, so it stabbed the nearest building with its legs, the orange energy flowing sporadically into the building and it detonated into a huge explosion. It sent debris flying into the strander, causing it to crash. The C3N-T1_PL3AD then faced forward again but Darryl had recovered and was preparing his signature attack. He clacks the ends of his palms, the two bass drums hits sounded and both of his arms flashed twice. He powers up his thrusters to max and charges straight towards the C3N-T1_PL3AD. He goes so fast that the glass shatters off the buildings as he roared past. Jotaque didn’t have time to react.
+Darryl shouted, “Chikyū funsai josaidōki!” He flies straight into the C3N-T1_PL3AD’s head and out the back with Jotaque by the throat. Darryl flies through the air and slides on a pile of rubble and throws Jotaque into a wall, becoming embedded inside of it. Jotaque is left coughing in the wall. In the background, the C3N-T1_PL3AD is seen with a huge hole through its body. Electricity arcs all over the inside before exploding several times to signal that it had been destroyed.
+“You disgust me, machine.” Jotaque said weakly. Darryl noticed a huge wave of jets and helicopters surrounding the city, flying the world government colors. Darryl gives one last fierce look towards Jotaque, his red pixelated eyes sharp enough to make the nearest victim explode into pieces, teleports away with a *BZOOM*.
+
+The city is flooded within hours with world government military personnel, private investigators, damage control and evaluators, and the crew did nothing but sit back and watch them do their work. They rested within the ruins of the Formatia HQ, Kaina closely observing the site of the strander crash. Once the crew move some debris away, they find that a large part of building is blocking the way inside the strander.
+“We’re gonna need a crane over here.” said one of the D.C. workers.
+“Move.” ordered Kaina, pointing his lever action towards the debris. The D.C. workers hastily move out of the way and Kaina shoots the Debris, punching a hole straight through it and sent a crack spreading vertically. The debris broke apart at the crack, falling either way and Kaina advances, the D.C. workers telling him not to go in there. He comes across the Strander and presses the button the open the bay door. It struggles to open, then stops midway with the electronics straining to open it. Kaina forces it open with his hands and enters the cabin to look around. He then finds someone in the pilots seat, unconscious with their head on the console.
+Kaina walks over and shakes the person and said, “Hey, you alright?” asked Kaina.
+Their head stirs and said disoriently, “Huh?” They look at Kaina and its revealed to be Lytheys. “Kaina?” said Lytheys weakly. Kaina then hugs Lytheys, which shocks her when she considers what she did to him and her followers.
+“I’m glad you’re okay.” said Kaina. Lytheys doesn’t know how to respond, but warmly returns with her own embrace. “What happened to Frenta?” asked Kaina.
+“I left her back at the station,” answered Lytheys, “I thought I could redeem myself if i was the one to take Jotaque down.
+“No, all that matters is that your safe, here and now.” consoled Kaina.
+
+Back outside, Tylinus was looking around, helping the workers somewhat for “small favors” in return. He spots an unmistakable figure down an alleyway, its purple drained eyes and rotten skin looking directly at him, it was another zombie. It shuffled away behind a wall and after Tylinus checks that he won’t be noticed, follows it. Upon turning the corner he sees it just standing there with its back to him. Tylinus draws his weapon and approaches it cautiously. Then a woman reveals herself from behind it pulling a knife from its head.
+Tylinus lowers his weapon and called out, “Fallen, we gotta stop meeting like this.” Fallen was an invaluable asset to the FFORMLESS FFEAR because she has an ancient power that has her have the ability to summon zombies to her aid.
+“Well I’ve come to not appreciate those who kill my scouts.” said Fallen, “We were on this case way before you ever showed up.”
+“But we handled it in just a couple of days, sounds like you were having trouble just to get this operation off the ground.” said Tylinus.
+“Democracy, makes things slow,” explains Fallen, “The FFORMLESS FFEAR isn’t able to go all willy nilly now after the incident with Viridian.”
+“What are you here for now?” asked Tylinus.
+“Well, since no one will believe that a ragtag resistance group took down the god of all mechs, we are going to take the credit.” 									“Fine with me I guess,” responds Tylinus, “we don’t want to be known for stopping something like that, the contracts would become ridiculous.”
+“Well I thought I’d just tell you in person,” said Fallen, “I still owe you guys, if you need me, you know who to call.” She then sinks into the ground disappearing into a black mist.
+
+“To a colorful city!” yelled someone on the top of the stage at the Farland bar.
+“To a colorful city!” chanted the rest of the club which then dissolved into chat and banter as the members of Formatia celebrate their victory. The crew was also present, all sitting in reserved seats with Rugasus taking full advantage of the special guest title given to them by eating up what he could. The crew were socializing in their own groups, but Kaina sat alone in the corner, running his finger around the rim of the glass. He then looks towards the bar and spots Lytheys drinking her heart out.`,
+
+        decisions : [
+            ["Comfort Lytheys", "heoPath15"],
+            ["Leave Lytheys be" , "cowPath14"]
+        ]
+    },
+
+    heoPath0 : {
+        text :`Talk envelops the group soon after and it was interrupted almost as fast as it started by Rugasus stating, “Forget it, lets just go.”
+>>>>>>> 5c8f75e5d345c860de20d5c7f83fee267d690a73
+“Well that was a quick 180, have I influenced you that much.” Kaina retorted.
+“First, your statement is invalid, second, shut up.” Rugasus said back`,
+
+        continue :[
+            ["Continue","exo2"]
+        ]
+    },
+    heoPath1 : {
+        text :`Kaina grabbed him by the arm and asked, “Excuse me sir, do you know where-”
+“OH GOD PLEASE STOP, I DIDN’T DO ANYTHING, I SWEAR.” begged the man as he dropped everything he had in his hands.
+“Kaina back off, you’re scaring him.” said Tylinus. Kaina backed off and Tylinus walked up to him. “Sir, we are just tourists from-”
+“Tourists...here?” said the man, “You must be crazy to come here.”
+“Look, all we need to know is where the Farland bar is.” explains Tylinus
+“Yeah, Yeah whatever just three blocks that way and second entrance to the left please just...leave me alone.” explained the man. He backed off from the group and hastily made his way away from the group muttering, “Tourists...stupid...crazy…”
+`,
+
+        continue :[
+            ["Continue","exo3"]
+        ]
+    },
+    heoPath2 : {
+        text :`“Tylinus.” calls out Rugasus as he gets absorbed into the crowd. Kaina was being carried by the crowd, and Koiraze simply stays in here seat, observing the crowd. They all looked towards the center and found Tylinus dancing with the crowd, having a good time with a smile on his face. A general feeling of “you gotta be kidding me” ran through the whole group.`,
+
+        continue :[
+            ["Continue","exo4"]
+        ]
+    },
+    heoPath3 : {
+        text :`He went to pull out his lever-action, but was stopped when the man from the stage grabbed onto his arm and said, “I vouldn't do zat my friend.”`,
+
+        continue : [
+            ["Continue","exo5"]
+        ]
+    },
+    heoPath4 : {
+        text :`Kaina sighs and reaches for his mask. Upon grasping it, his arm began to shake. He took a deep breath and took it off slowly, his blonde hair falling over his head, his blue eyes looking forward in anticipation. But Lytheys just stood there with her arms crossed. Nothing happened. Kaina was confused, he then took the mask completely off his head. Still nothing. Tylinus and Rugasus looked back and forth from the two, both as amazed at the situation before them.
+“Well, was that so hard?” Lytheys asked
+“That's weird,” said Rugasus, “This shouldn’t be possible.”
+“I’m in there with ya.” responds Tylinus.
+“Alright, guys, it's time to stop messing around, we need to fill you in on the plans we have and what roles you will fill for them.” exclaimed Lytheys.
+Kaina staggered, absolutely dumbfounded at the sight presented to him. The symptoms always show up around now, no matter who it was. “Talk it out with Tylinus and Rugasus, they’re the group leads, imma take a walk.” said Kaina.
+“You best, I don’t think you’re feeling too good.” suggested Tylinus. Kaina then proceeded to leave the room. He looks around the HQ without his mask and sees two women on break near the mechanical station. Once one notices him, she tells the other and points in Kaina’s direction. The other turns around and puts her hand on her chest and began to gossip. Kaina looked elsewhere and saw another woman transporting a crate of food and upon making eye contact, she brushed her hair behind her ear and smiles. Kaina looks down in contemplation, and takes his mask and puts it back on his head.`,
+
+        continue : [
+            ["Continue", "exo6"]
+        ]
+    },
+    heoPath5 : {
+        text :`“What are you doing here.” Kaina asks
+“Wondering if I’m ready for this,” responds Lytheys, “I’m the leader of a shoddy resistance group and I’m about to throw most of my friends to the wolves.” She took a swig from her flask. “You ever wonder what this city was like before Jotaque showed up.”
+“What was it like?” asked Kaina, sitting down next to her.
+“It looked exactly the same, minus the brutal suppression of expression.” answered Lytheys. Kaina gave her a confused look, Lytheys replied, “I know, but that's how the city was, cold, gray, miserable, unpleasing to the eye, and full of nothing. But you know we did, we didn’t care, we didn’t let that stop us from doing what made us feel better.”
+“What was that, dare I ask.” said Kaina
+“Our expression,” answers Lytheys, “portra park was the ultimate hub for all of us. Everyone would set up booths and show their own unique ways to brighten up the city. There was even one day where we all tried to fill as much color as we could into the fog as we could. That day, there was not even a hint of gray area in the sky, it was beautiful.”
+“Sounds like you miss the old times.” said Kaina.
+“Wouldn’t you?” asks Lytheys, “I grew up in the old times, my home was so full of joy and creativity. I wish I didn’t have to fight to have them back.”
+“Well it’s too bad for me,” said Kaina, running his fingers along the side of his mask. “I have no past I want to look back upon. The only choice I have is to find good times moving forward.”
+“I’m sorry to hear that,” said Lytheys, she looks towards Kaina, “Take off your mask.” Kaina complies by raising just above his head. “What could of happened to make you hide who are to world?”
+Kaina brushes of the question by saying, “Look, all that matters is what you do now. Clearly all your followers follow you for a reason, they all want to see the home they once lived in again, and they are willing to throw themselves to the wind if it means that the next generation will see the world that they saw.”
+“But-” Lytheys said.
+“No buts, listen, there is resistance out there waiting for their leader to tell them what to do, the plan revolves around you and your timing.” encourages Kaina, “Come on, get up, give these people a reason to keep fighting for what they believe in.” Kaina attempts to pick up Lytheys, but she falls back on the ground hard. “Lytheys, you’re drunk.”
+“I know, I’m sorry.” said Lytheys
+“Here.” said Kaina. He holds her up and pulls out a syringe, bites the cap off and spits it off and injects it into Lytheys. A blue surge washes over her body and dissipates quickly. She starts coughing and quickly regains her balance.
+“What… *cough* ...was that?” asked Lytheys bewildered.
+“A little concoction we came up with after “studying” the B.U.B.B.L.E. Rogue, it’s able to clean up your system real good,” explained Kaina, “You’ll need some water with it though.” Kaina takes out a container and hands it to Lytheys, who proceeds to down the whole thing in a matter of seconds.
+“That stuff’s strong.” remarks Lyheys, “Okay, I’m ready.” The two then head off down the stairs to regroup with the team.`,
+
+        continue : [
+            ["Continue", "exo7"]
+        ]
+    },
+    heoPath6 : {
+        text :`Kaina eyes a nearby vehicle, “I think I have an idea.” He walks over to a nearby dump truck and bangs on the door.
+Tylinus whispers as loud as he could, “Yo, what are you doing!”
+“Come on out now, we need to talk!” Demanded Kaina. The door flew open and rock music started playing, an avalanche of beer bottles falls out of the cabin. A worker gets out of the seat, staggering the whole time.
+“You think you scare me, boss man.” slurred the worker, never making eye contact as his head was swinging every which way. “I’m the who gets all the work done, and without me, you would be nothing.” The worker takes another swig from the current bottle in his hand. “You know what, you’ll never get another ounce of work out of me, I don’t care-” He then promptly fell into the mud face first. Kaina signals the crew that it was clear to come over.
+“Kaina what were you thinking?” asks Rugasus frustratingly
+“I must side vith ze angry man here, what you did could’ve blown ze whole operation.” agrees Brozuire.
+“Well it worked didn’t it, now get in the back, we’re gonna ram right through the front gate and gather all the intelligence we can.” explained Kaina.
+“Zis is insane, if you do somezing like zis, his regime would be looking all around for us, no one vill be safe!” Exclaimed Brozuire.
+“That is why you’re going to call off the attack,” explained Kaina, “we’ll go in ourselves and steal something valuable, that way the attack is not linked to you guys and Jotaque will focus more resources trying to find us more than you guys.”
+Brozuire contemplates the plan, he then begrudgingly said, “Ahhhh- Fine, your lucky zat Lytheys is not here, if so she vould of gone mental on zis plan.” He then checks his surroundings and makes his way out of the compound.`,
+
+        continue : [
+            ["Continue", "exo8"]
+        ]
+    },
+    heoPath7 : {
+        text :`They run and gun all the way through the complex until they reach a giant reinforced door.
+“This looks important, I’ll find a way inside.” yells Kaina.`,
+
+        continue : [
+            ["Continue", "exo9"]
+        ]
+    },
+    heoPath8 : {
+        text :`“I think I found it.” pointed out Tylinus. The crew gathered around what Tylinus found and became dumbfounded at the sight before them.
+“Really?” asked Rugasus`,
+
+        continue : [
+            ["Continue", "exo10"]
+        ]
+    },
+    heoPath9 : {
+        text :`“No,” responded Kaina, “Tylinus, here take the wheel.”
+“What,” said Tylinus confused, “where are you going?”
+“Somethings popped up,” answered Kaina, “you guys go on without me, I’ll be back later.” Kaina jumps out of the tank and uses his lever actions to fly to where Lytheys was.`,
+
+        continue : [
+            ["Continue", "exo11"]
+        ]
+    },
+    heoPath10 : {
+        text :`Before Jotaque could start another sentence, Kaina shoots a shot straight towards his head, but the bullet is stopped by a wave of blue energy.
+“I don’t think so, my good sir,” said Jotaque with a smug face, “Me and Lytheys have some unfinished business, now would you kindly tell me when the attack of my home by the resistance will start.”`,
+
+        continue : [
+            ["Continue", "exo12"]
+        ]
+    },
+    heoPath11 : {
+        text :`“Got it, on my way.” Kaina said while turning his craft around. He dived dangerously close to the ground and found a road. Looking down it, he found the tank bobbing and weaving missiles from two attack helicopters. The turrets were still locked on Kaina’s craft, but on his first fly by he was able to take down both helicopters with his twin laser guns.
+“All right,” Tylinus radioed in, “now let's see what this does to big, tall, and fugly up there.” The tank charges another shot and Kaina circles back around to engage. Halfway to the airship, Kaina sees another blue streak zoom across the sky and land a direct hit on the airship. The ship lurches upward and the fire of the explosion can be seen on the other side, indicating that the shot had pierced through to the other side.
+“I will end this.” exclaims Kaina as he flies over the airship. He spots the exit wound of the tank shell and dives towards it, firing his lasers inside. When he gets close, presses the eject button. The onboard computer said, “Thank you for using the PF-2 escort fighter, we hope you had a good ti-” It crashes straight into the hole and sets off a chain reaction with explosions running down the craft. Kaina lands on top of the airship, sliding across it. He flips upright and runs for it. When he reached the edge, he jumped as far as he could right as the airship had one last grand explosion, splitting it into several pieces. Before Kaina reaches the ground, he shoots his lever action as much as he could to slow his fall. He still hits the ground hard and lays there waiting for Tylinus. 
+When they arrived in the tank, Tylinus poked his head out of the drivers hatch and asked, “You mind explaining to me what that was all about?”
+Kaina drags himself off the dirt and states, “We’re gonna need everyone and everything for this one, I’ll show him that he shouldn’t of messed with us.”`,
+
+        continue : [
+            ["Continue", "exo13"]
+        ]
+    },
+    heoPath12 : {
+        text :`Moments later, the guard finds himself tied up in the back of his car and mouth taped over. Wenter said, “Let’s hope the rest of their forces isn’t as pitiful as this guy was.”`,
+
+        continue : [
+            ["Continue", "exo14"]
+        ]
+    },
+    heoPath13 : {
+        text :`Kaina is shocked at the news, “she has a humane class fighter mech, please hurry.” The audio ends with the sound of bullets hitting the wall. Kaina looks towards the C3N-T1_PL3AD, and curses to himself and runs to Formatia HQ.`,
+
+        continue : [
+            ["Continue", "exo15"]
+        ]
+    },
+    heoPath14 : {
+        text :` Kaina growls after observing for long enough. He blasted his way towards them and lands between Lytheys and the HQ.
+“Enough!” Kaina yells.
+“Get out of my way Kaina, this is between me and my peers!” commanded Lytheys.
+“No, it’s not,” yells Kaina, “You’ve gone crazy with the idea that absolutely everyone needs to get out of this safe, and look at what it has done, your shooting at your own friends!”
+“I must do what is necessary if it means that I can protect every single one of them.” said Lytheys.
+Kaina then rips off his mask and throws it on the ground, “Has it meant nothing to you,” Kaina yells, “the constant faith that these people put into your cause, the blood, sweat, and tears you all shared together. They all looked towards you as the answer to the cities problems, they are willing to trust you, why is it so hard for you to trust them!” Lytheys is shocked at this revelation, she isn’t able to speak. “No, wait, no I get it,” said Kaina, “is it that you care more about your own feelings more than the others, so self absorbed about what you’ll lose, that you never thought about what they want, and why they would do it.”
+Lytheys snaps at this, “Of course I think about what they want, you think you know me, I’m the one that has to sort out the right from wrong here, and their choices are wrong, so move aside.”
+“Fine then, prove it to me,” yells Kaina, this catches Lytheys off guard, “I need to know that I can trust you, show me who you really are.”
+“You leave me no choice.” said Lytheys gearing up.
+“I’m sorry it had to turn out this way.” said Kaina as he gets into a defensive stance. They stare each other down, waiting for the other to charge. Lytheys decided to go first, and so Kaina charges straight in.`,
+
+        continue : [
+            ["Continue", "exo16"]
+        ]
+    },
+    heoPath14c : {
+        text :`Lytheys fires towards the sky at Kaina who is evading by blasting himself through the sky with his lever action. Kaina manages to damage the mech significantly during his fly bys, and Lytheys patience was waning.
+“I need to get her out of there.” Kaina thought to himself. He shoots Lytheys mech, which stuns her, and he goes straight after it. Lytheys was able to recover fast enough to grab Kaina out of the sky and smash him down in the ground, causing him to slide backwards towards the HQ.
+“Give up Kaina, this is over,” asked Lytheys, “I never wanted to fight you.”
+“I never wanted to either.” coughed Kaina, “but I must be the only one able to break you out of your delusion. Because clearly, you’ve been around Jotaque so much, your starting to act like him if you think your way of thinking is always the right answer.” 
+Lytheys gets snaps at this and yells, “Don’t you dare compare me to him!” She starts to shoot at Kaina.
+“Vait, Kaina!” yells Brozuire, jumping in front of him blocking the gunfire with his umbrella. The umbrella handles a few, but the constant fire punched holes straight through it and hits Brozuire through the shoulder and lower side. Lytheys then stops firing at the realization of what she's done.
+“Kaina,” said Brozuire weakly, only facing Lytheys, “to be honest vith you, I’ve grown quite jealous of you. I have known Lytheys for all my life, and not once did she ever trust me as much as she did you. I believe that you are ze one that will pull her back from ze darkness zat clouds her mind.” Kaina looks on in total horror. “Do me a favor vill you, take care of her, and make sure her dream is fulfilled...ze right way.” He then faints on the ground. 
+Kaina is furious, he rises up and berates to Lytheys, “Is this what you wanted, HUH, your friend whos been there since the beginning betrayed by the likes of YOU, the one he trusted the most. You call THIS protecting your friends!”
+Lytheys stammers, “I-I didn’t mean to…”
+“Shut it!” Kaina yells furiously, “you are so caught up in what you want that aren’t even capable of doing them yourself!” He blasts himself over the mech and begins spinning and shooting sporadically towards Lytheys. A hail of blue bullets shreds the mechs frame in seconds, leaving only the cabin. Kaina blasts himself towards the cabin, grabs onto it and punches a hole through the glass and grabs Lytheys by the collar. “You talk about all this stuff about this trust bs, but before you even realised it, you were the one that betrayed YOURSELF!” yelled Kaina furiously. Lytheys out of shock, pulls out her side arm and shoots Kaina in the head.
+Lytheys sits there in shock as she contemplates whats she's done, “You have no idea what I had to go through in the past, someone like you wouldn’t understa-” Lytheys expression then turns to that of horror as she sees the bullet wound in Kaina’s head begins to regenerate quickly, the mech was sparking and sounding alarms during the process.
+“We all have our evils in the past,” said Kaina as the bullet is pushed out of his head, “but you know the difference between us, I don’t use it as an excuse for what I do now.” He then presses the eject button in the cabin and Lytheys was launched straight up. Kaina backflips off the mech and shoots two final shots into the core of it, causing it to explode when he lands. Kaina then drops his lever actions and reaches out to catch Lytheys. He lets her down but she was not able to support herself as she falls to her knees. She looks forward but sees nothing. The Formatia resistance members look to Kaina and he yells, “Get outta here!” The members comply hastily and grab their vehicles, flooring it out of the city. Lytheys tries to say something but keeps stuttering. Frenta, along with a few others, then peers around the shattered walls of the HQ, eyeing Kaina. She was shaking so much that it was a mystery how she was able to still stand. Kaina then hears loud explosions heading their way.
+“Go, get out of here!” yells Kaina. All the people scatter, but Frenta is frozen in fear. Kaina can see the C3N-T1_PL3AD barreling towards them, he quickly grabs his lever actions and blasts himself towards Frenta, lets go of the lever actions, grabs Frenta, and crashes straight through the wall on the other side. They proceed to go flying, Kaina taking all the blows as he skipped along the pavement and crashes into a window, his lever actions flying in their own directions. Tylinus and Afreimus shoot the C3N-T1_PL3AD with everything they got, with only Afreimus’s arrows being effective. In the process of rushing, the C3N-T1_PL3AD crushed and destroyed the Formatia HQ, proving to Lytheys that her choice was the wrong one. She could only look down in defeat as the events unfolded around her.`,
+
+        continue : [
+            ["Continue", "exo17"]
+        ]
+    },
+    exoHeo : {
+        text : `“You guys seriously kept the B.U.B.B.L.E rogue for yourselves!” exclaims Lytheys.
+“Well actually he came to us seeking a place to call home, we never actually destroyed him, just the people controlling him.” explained Yveta. Lytheys just looks at her in absolute bewilderment. 
+Kaina walks over to Wenter and said, “I need you to take Frenta and Lytheys away from here, take them to the docking station at Portra, they can get away there.”
+“Got it.” complied Wenter. He went over to Lytheys and Frenta and lead them to the Strander. In a moment, the engines fired up and it flew off over the buildings.`,
+
+        continue : [
+            ["Continue", "exo18"]
+        ]
+        
+
+    },
+    heoPath15 : {
+        text :`Kaina closes his eyes and breaths deeply as he gets up to console her. 
+He sits next to her and said, “That rough huh?”
+“What are you still doing here Kaina,” asked Lytheys depressingly. “You could’ve left whenever you wanted.”
+“Well mainly we need to get Taika out of the ground and wait for the repairs for the strander to be complete before we can go.” Lytheys looks down trying to ignore Kaina. “But for me, I need to make sure you’re okay.” 
+Lytheys looks towards Kaina and said, “How could I be okay after what I had done. For all my life I feel like, my choices were always the wrong ones. No matter what I do, I make things worse.”
+“Hey,” consols Kaina, “You made those decisions with good intentions, you wanted to protect those close to you.”
+“What by shooting them into submission?” countered Lytheys.
+“No, but didn’t you notice what happened,” pointed out Kaina, “No one retaliated, no one fought back. They trusted you enough to not defend themselves because they knew you wouldn’t hurt them.” Lytheys body is washed over in realization. A hand rests upon her left shoulder. She turns around and finds several people surrounding her, all in trust.
+“We hope you will lead this city for all of us.” said a man. Several people joined the rant of encouragement and in no time Lytheys was convinced.
+“If your all sure, I’d be glad to lead you all.” said Lytheys. The band then plays full blast and the club gets rocking. Many people are being snatched up and start dancing. Lytheys is pressured into the fray, despite the awkward atmosphere. Kaina and Lytheys are dancing with each other the most. Afreimus is creating a spectacle with her brightly colored magic arrows and lighting up the fog with many colors and elements. The colors soar through the air, entertaining all those that it reached. The rest of the night is forgotten as they continued to have the best time of their lives.`,
+
+        continue :[
+            ["Continue", "<100= everydayEnding"],
+            ["continue", ">100= trueEnding"]
+    ]
+    },
+    agrPath : {
+        text : ``,
+
+        Continue : [
+            ["Continue", "exo"]
+        ]
+    }
+    
+}
+
+
+
+
+
+    
+
+  
     
     
 let storyContainer = document.getElementById('story');
 
 let buttonContainer = document.getElementById('buttons');
     
-    function createButton(choice){
-        let button = document.createElement('button')
+function createButton(){
+        let button = document.createElement ('button');
+        
+        button.innerHTML = "Accept Contract";
 
-        button.innerHTML = "My Button " + choice
-
-        button.addEventListener('click', function() {alert('Button' + choice + ' was clicked')})
+        button.addEventListener ('click', function() {alert('Button was clicked.')})
 
         buttonContainer.appendChild(button);
     }
-    createButton()
+    for(var i = 0; i<3; i++){
+        createButton();
+    }
     
     </script>
   
