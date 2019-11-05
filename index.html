@@ -4,46 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Influenced</title>
 </head>
 <body>
 
-    <div style="background-color:silver">
-        <h1>Influenced: The Cursed Promise</h1>
-        <p>“I cannot believe this!” exclaimed Rugasus, “they expect us to seriously pick this up literally right after dealing with the likes of Dirvana!”</p>
-        <p>“Calm down Rug, we simply can’t sweep this under the desk if it is worth this much.” bargained Tylinus. The crew were all back safely on their base after the nightmare that was Dirvana, a being able to control reality at his will, barely able to escape with their lives. Their familiar base was formed on the back of recently formed volcanic rock, all mostly grayish black. A man-made beach rests at the base of the island, with it idly accepting the embrace of the water that flows onto it. Overlooking the events below was the watchtower Yveta constructed herself, as she did not find her current abode to be satisfactory. The ATC tower kept a watchful eye of the skies, despite the fact no one was present to make any use of the information on the monitors. Then there was the main hub, four stories high and full of tense energy, as if the atmosphere itself was able to push you slightly in the other direction.</p>
-        <p>“Like I could care about their problems, I need a damn break anyway!” exclaimed Rugasus once more.</p>
-        <p>“Come on, it can’t be that hard,” pushed Tylinus, “it's only in the city of Virba; from what I’ve heard, it's not that bad of city.”</p>
-        <p>“Could you all calm down, this is the most we have ever argued over a job and it’s starting to get annoying.” Kaina said as he entered the room. His special mask completely obscuring his face and distorting his voice.</p>
-        <p> “Like to add anything else to this long list of bull I have to put up with today.” said Rugasus as he casually leans against the wall.</p>
-        <p>“Yes, actually, I think ever since the job with Dirvana, you’ve been afraid to take another high paying job.” stated Kaina. Rugasus shot him the sharpest stare he could give, as if his eyes were able to set fire to Kaina. “I mean truly, after going through the trauma of fighting Viridian with his summonable zombie companions and Dirvana with the power to alter reality at his whim, you’re afraid to find out what else you may find.” said Kaina, sarcastically.</p>
-        <p>“As if I would be afraid to back down from the likes of their puny “magic”, you should know, I was the one who saved everyone as they were cowering in the corner.” fired back Rugasus.</p>
-        <p>“If my memory serves well, I believe it was Yveta that was the MVP of our little scuffle with Dirvana.” said Wenter as he walks in with Yveta.</p>
-        <p>Rugasus scoffs and said, “Yeah, whatever, truly the saviour of the world.” Yveta casually sticks her tounge out at him, she did so looking like a teenager fresh out of bed with her messed up purple hair and black beanie with gold stripes running the circumference of it.</p>
-        <p>Ferelia walks in after overhearing the conversation and snatches the dossier from Tylinus’s hands. “Hey, you could ask first.” said Tylinus condescendingly.</p>
-        <p>Ferelia exhales, “Yeah yeah whatever.”  She examines the paper closely and her eyes lit up, “Oh yeah, I’ve heard of this place, never actually been there myself but Virba is probably a hermit city.”</p>
-        <p>“What’s your meaning?” asks Tylinus.</p>
-        <p>“I used to see these kinds of places a lot, but this is especially bad keeping what it is a secret, a giant proxy state to fuel the ambition of whoever the figure head on top is.” States Ferelia.</p>
-        <p>“And will you ever tell us where you see these kinds of places from.” asks Tylinus, not really expecting an answer.</p>
-        <p>Ferelia pauses, then said, “Nope.” She then turns around and leaves the room. Her red orange hair flowing perfectly on her exit.</p>
-        <p>“Alright, back on topic,” said Tylinus, “What's the plan for Virba.”</p>,
 
+    <div id="intro">
+    <h1>Influenced</h1>
     </div>
 
+    <div id="story">
+
+    </div>
 
     <div id="buttons">
 
     </div>
 
-
-
     <script>
-const exoPath = {
-    Decisions : [
+
+    var BackgroundColor="LightBlue";
+          
+    document.body.style.backgroundColor=BackgroundColor
+
+    let storyContainer = document.getElementById('story');
+    
+    let buttonContainer = document.getElementById ('buttons');
+
+    let history = ["intro"];
+
+    let aggressivePoints = 0
+
+    let heroicPoints = 0
+
+    let cowardPoints = 0
+
+    
+        
+    const story = {
+    intro : {
+            text : `“I cannot believe this!” exclaimed Rugasus, “they expect us to seriously pick this up literally right after dealing with the likes of Dirvana!”
+“Calm down Rug, we simply can’t sweep this under the desk if it is worth this much.” bargained Tylinus. The crew were all back safely on their base after the nightmare that was Dirvana, a being able to control reality at his will, barely able to escape with their lives. Their familiar base was formed on the back of recently formed volcanic rock, all mostly grayish black. A man-made beach rests at the base of the island, with it idly accepting the embrace of the water that flows onto it. Overlooking the events below was the watchtower Yveta constructed herself, as she did not find her current abode to be satisfactory. The ATC tower kept a watchful eye of the skies, despite the fact no one was present to make any use of the information on the monitors. Then there was the main hub, four stories high and full of tense energy, as if the atmosphere itself was able to push you slightly in the other direction.
+“Like I could care about their problems, I need a damn break anyway!” exclaimed Rugasus once more.
+“Come on, it can’t be that hard,” pushed Tylinus, “it's only in the city of Virba; from what I’ve heard, it's not that bad of city.”
+“Could you all calm down, this is the most we have ever argued over a job and it’s starting to get annoying.” Kaina said as he entered the room. His special mask completely obscuring his face and distorting his voice.
+“Like to add anything else to this long list of bull I have to put up with today.” said Rugasus as he casually leans against the wall.
+“Yes, actually, I think ever since the job with Dirvana, you’ve been afraid to take another high paying job.” stated Kaina. Rugasus shot him the sharpest stare he could give, as if his eyes were able to set fire to Kaina. “I mean truly, after going through the trauma of fighting Viridian with his summonable zombie companions and Dirvana with the power to alter reality at his whim, you’re afraid to find out what else you may find.” said Kaina, sarcastically.
+“As if I would be afraid to back down from the likes of their puny “magic”, you should know, I was the one who saved everyone as they were cowering in the corner.” fired back Rugasus.
+“If my memory serves well, I believe it was Yveta that was the MVP of our little scuffle with Dirvana.” said Wenter as he walks in with Yveta. 
+Rugasus scoffs and said, “Yeah, whatever, truly the saviour of the world.” Yveta casually sticks her tounge out at him, she did so looking like a teenager fresh out of bed with her messed up purple hair and black beanie with gold stripes running the circumference of it.
+Ferelia walks in after overhearing the conversation and snatches the dossier from Tylinus’s hands. “Hey, you could ask first.” said Tylinus condescendingly. 
+Ferelia exhales, “Yeah yeah whatever.”  She examines the paper closely and her eyes lit up, “Oh yeah, I’ve heard of this place, never actually been there myself but Virba is probably a hermit city.”
+“What’s your meaning?” asks Tylinus.
+“I used to see these kinds of places a lot, but this is especially bad keeping what it is a secret, a giant proxy state to fuel the ambition of whoever the figure head on top is.” States Ferelia. 
+“And will you ever tell us where you see these kinds of places from.” asks Tylinus, not really expecting an answer.
+Ferelia pauses, then said, “Nope.” She then turns around and leaves the room. Her red orange hair flowing perfectly on her exit.
+“Alright, back on topic,” said Tylinus, “What's the plan for Virba.” `,
+        choices : [
         ["Accept contract", "heoPath0"],
         ["Force everyone to take contract", "agrPath0"]
         ["Decline contract", "cowEnding1"]
-    ],
+    ]
+},
     exo2 : {
         text : `Kaina sighs and looks towards Tylinus, “What kind of specializations do we need for this one.”
 “Details are scarce, but all we know is that the client wants the VIP kicked from his position in his dictatorship.” explained tylinus
@@ -76,7 +98,7 @@ The console said, “Hello, Tylinus, and welcome to Virba, please wait while we 
 As they headed towards the exit, a console in the wall said, “Here is your ticket for proof of ownership for you craft. Right now, you are entering Portra Park.” a little slot dispensed a tourist pamphlet and Kaina receives it. As it was naming more places and hotels to stay at, the crew were already walking away. When they reached the surface, they were surprised to find that the “Park” they were presumably supposed to be at, was nothing but flat concrete. Gray fog limited the vision so much that you couldn’t see more than 15 feet in any direction.
 “Some park.” retorted Rugasus. “What are supposed to do just walk.” Upon saying this,  he realized that the other three were already walking ahead of them. He gave an expression of disappointing realization and moved to catch up with the group.
 The crew were walking when they spotted some buildings up ahead, “So there is a city here after all.” said Rugasus. When they reached the street, it was wide enough to fit 4 lanes of traffic going both ways, but not a single car occupied even a parking space. The lights continued to control traffic despite its absence. The skyscrapers that ran along the sides were lacking any form uniqueness, no lights, no signs, just gray concrete and tinted glass. A man was walking in the opposite direction of the crew, looking as disorganized as a file drawer stuffed with too many papers.`,
-         Decisions : [
+         choices : [
             ["ask for directions", "heoPath1"],
             ["Have everyone take your lead", "agrPath1"],
             ["Split up", "cowPath1"]
@@ -95,7 +117,7 @@ The bartender scratches his beard and simply answers, “Alright.” The four fi
 “You truly z’ink ve vould treat our guests so poorly.” said the man on the stage. He wore dark blue robes with matching pants, white gloves, dress shoes, a hat with an outlandish design, and an umbrella in his hand. Music had started playing upon his entrance. “I’m sure j’ou had already been exposed to ze unique horrors zat zis city had been plagued by.” said the man extravagantly. The Bartender had started to pre-fill drinks.
 “Oh yeah,” said Rugasus leaning back in his chair, “What might that be?” 
 The man smiles elegantly and raises his hands above his head and yells, “Expression!” Just then, the doors swung open and people began to fill the bar at an alarming rate. The man raises the end of his umbrella to mouth, “Individuality, uniqueness, character, but most important of all, it’s just no fun.” The crowd cheers to his presence. “I vill not sit here and vatch zis, my city, fade avay into obscurity, so ladies and gentlemen, I present to you our main event.” A band quickly assembles on the stage and begins to play vigorously. “The men and vomen here see ze consequences as negligible, and here tonight they vill spill zere heart and soul into zeir art. So sit back, relax, and release every ounce of pent up energy have into zis night!” The crowd cheered again and form a dance floor in the center of the bar and begin to dance wildly. The crew stand up trying to see over the crowd but get separated.`,
-        Decisions : [
+        choices : [
             ["Do Nothing", "heoPath2"],
             ["Fight", "agrPath2"],
             ["Resist", "cowPath2"]
@@ -103,7 +125,7 @@ The man smiles elegantly and raises his hands above his head and yells, “Expre
     },
     exo4 : {
         text : `just then, the doors were blown down and men in gray suits with clubs and sidearms stormed the bar. Another slightly more decorated officer shot into the air and yelled, “That’s enough, arrest them all!” Kaina was dropped onto the floor as the people scrambled.`,
-        Decisions : [
+        choices : [
             ["Draw weapons", "agrPath3"],
             ["Follow his suggestion", "heoPath3"],
             ["Surrender", "cowPath3"]
@@ -153,7 +175,7 @@ Koiraze takes off her mask and said, “Anata ga anata no jinsei no saidai no ku
 “What do mean, explain?” ordered Lytheys 
 “It’s not particularly something we would like to explain in this professional setting.” explained Tylinus.
 “I don’t care about the reason, we are short on time and I need people I can trust, you want your payment, then take off the mask.” commanded Lytheys. Rugasus and Tylinus both nod agreement to Kaina and head over to the other side of the table.`,
-        Decisions : [
+        choices : [
             ["Take off mask", "heoPath4"],
             ["Come up with an embarrasing excuse, cowPath4"]
         ]
@@ -166,7 +188,7 @@ Koiraze takes off her mask and said, “Anata ga anata no jinsei no saidai no ku
 “It vas apparently built by her father, she even helped vith a brick or two.” answered Brozuire. “Perhaps you can fetch her for me, our vindow is closing fast, and ve vill need our leader leading ze operation.”
 “Got it.” Kaina said as he unholsters his lever actions and uses the recoil of firing them periodically in order to fly.
 “I have not seen zat ever in my life.” Brozuire said as he watches a physics defying man flying off into absurdity. The clock tower was not hard to spot as it was a different building architecturally compared to the rest of the city. It was unfinished, and a large portion of the roof was missing. Kaina flew into the opening and slid across the wooden floor. He looked around and found Lytheys sitting down at the edge of the tower, observing the non-active city.`,
-        Decisions : [
+        choices : [
             ["Approach with empathy", "heoPath5"],
             ["Approach with anger that the job is being ignored", "agrPath4"],
             ["Approach with no real idea what to say", "cowPath5"]
@@ -184,7 +206,7 @@ Koiraze takes off her mask and said, “Anata ga anata no jinsei no saidai no ku
 “Do we have any idea what this project of his is,” asks Rugasus.
 “Ve only got ze first half of it’s production name, it was named C3N-T1.” Brozuire answered. 
 “So what do we do now, we can’t sit here forever.” said Rugasus.`,
-        Decisions : [
+        choices : [
             ["Find Plan", "heopath6"],
             ["Go in guns blazing","agrPath5"],
             ["suggest to call off the entire operation", "cowPath6"]
@@ -201,7 +223,7 @@ The guards were walking back and forth when one asks, “Hey.”
 “Open fire on that truck.” said one of the guards. Immediately, orange streaks filled the air towards the truck. Koiraze deflects the bullets with ease with her sword, Tylinus, at the same time, laying down covering fire. The Guards duck out of the way as the truck goes up the ramp, hitting other vehicles and crates. Koiraze braces as her sword begins pink.
 “Taka sugiru yama wa arimasen (No mountain is too tall)” said Koiraze. She then slashes the air and the energy from the blade extends outward, putting huge holes in the entrance. The truck then crashes straight through what was left, dust, glass, and concrete spilling over onto the polished floor. The truck persisted to run straight through interior decorations, walls, and guards all the same. Rugasus fires upon those who reside behind their offensive. A guard with a rocket launcher then peers over a corner.
 “Watch out!” shouts Kaina as the rocket is fired. It explodes to the lower right of the truck, causing it to flip over on its side. As it slides, the crew immediately vacate the vehicle, jumping into the air. When the land, they start sliding on their feet and fire back at the enemy. They reach another hallway and run into it.`,
-        Decisions : [
+        choices : [
             ["Wander", "heoPath7"],
             ["Interrogate personel", "agrPath6"],
             ["Hold up in the nearest room", "cowPath7"]
@@ -224,7 +246,7 @@ A muffled explosion is heard from the door and the guards yelled, “Come on, so
 “This thing is absurd, it serves absolutely no tactical purpose, why would he ever build this?” wonders Tylinus.
 “Perhaps his psyche has just a pinch of insanity.” jokes Rugasus. Tylinus finds that there was an unusual amount of unused space leading into a large door. The audio log gets to a part where the scientist begins to plan his escape and in its explanation, complete described what Tylinus found inside. 
 Kaina takes the hard drive out after the download finished, “We need to find a way outta here.” Kaina said.`,
-        Decisions : [
+        choices : [
             ["Take Tylinus's idea", "heoPath8"],
             ["Blow a Hole in the wall", "agrPath7"],
             ["Build defenses and camp", "cowPath8"]
@@ -247,7 +269,7 @@ As the tank began to fall, Rugasus shouted, “This was not it chief!” He then
 “It would be the one you call Lytheys.” answered the A.I.
 “Lytheys, where is she” demanded Kaina.
 “Pinpointing…” said the A.I., “It would seem that they are currently heading down a hall in the third floor to the east,” Kaina was pondering, there is no way that she could’ve been caught so soon, especially without the presence of the resistance, “would you like me to place a waypoint and navigate?” asked the A.I.`,
-        Decisions : [
+        choices : [
             ["Save her", "heoPath9"],
             ["Disregard her", "agrPath8"],
             ["Retreat", "cowpath9"]
@@ -262,7 +284,7 @@ As the tank began to fall, Rugasus shouted, “This was not it chief!” He then
 “I believe she is referring to me.” said a voice. A man came from the hall and wrapped his arm around Lytheys’s shoulder.
 “Jotaque,” said Kaina staring with cold eyes.`,
         
-        Decisions : [
+        choices : [
             ["Shoot Jotaque", "heoPath10"],
             ["Bargin with Jotaque", "cowPath10"]
         ]
@@ -286,7 +308,7 @@ Kaina recognized it, “Tylinus?” he asked.
 Rugasus can be heard yelling while firing the mounted machine gun through the radio, “Go away, I don’t want to deal with your weaksauce.”
 “We’re gonna head your way,” explained Tylinus, “get these guys off us and we’ll be able to take that thing down.”
 “Or you could just drive straight!” yelled Rugasus.`,
-        Decisions : [
+        choices : [
             ["Fight Overseer", "agrPath9"],
             ["Save Tylinus", "heoPath11"],
             ["Fly away", "nopeEnd"]
@@ -319,7 +341,7 @@ The crew look to each other in understanding, “What are your numbers?” asked
 Sirese began to advance towards him, but was shortly stopped buy Kaina blocking her way with his lever action. “So what if we are?” responded Kaina. 
 Unnoticed by anybody, Koiraze gets a message on her arm monitor saying, “We don’t have much time, if you want to cash in on that opportunity, you’ll have to go now.” She looks around and walks into the station, fading into obscurity.
 “Then I’m gonna have to ask you to come with me.” said the Gray-suit, pulling out his side arm and walking closer. Upon closer inspection, Kaina recognized the man as the one who gave him instructions on how to find the Farland bar. “This is Varka to HQ, we got a couple of unrulies here in Portra, please send reinforcements.” He walks up directly to the group pointing his sidearm in their general direction, “Alright come on, your all coming with me.” The crew all look at each other, then back at the guard. “Well…?” he said.`,
-       Decisons : [
+       choices : [
            ["Capture him", "heoPath12"],
            ["Shoot him", "agrPath10"],
            ["Get him to leave", "cowPath11"]
@@ -362,9 +384,9 @@ Kaina is then also promptly distracted when Brozuire radios in, “Guys, I vould
 “I don’t know vhats gotten into her head, but she is laying siege at HQ and is preventing us from evacuating ze remainder of our forces.” radioed Brozuire.
 “Who?” radioed back Kaina.
 “Lytheys,” radioed Brozuire.`,
-        Decisions : [
-            ["Help Brozuire", "heoPath13" ]
-            ["Tell him to handle it himself", "agrPath11"]
+        choices : [
+            ["Help Brozuire", "heoPath13" ],
+            ["Tell him to handle it himself", "agrPath11"],
             ["Help Rugasus", "cowPath12"]
         ]
     },
@@ -392,7 +414,7 @@ Kaina flies in front of the HQ and lands. Observing the situation, he sees a mec
 “No!” said Lytheys half sobbing, “He will kill you all, I have to be the one to make sure that you all stay safe.”
 “Vell you are currently blocking our only exit out of ze city!” yelled Brozuire.
 “NO!” screamed Lytheys, “You’d never make it out in time.”`,
-        Decisions : [
+        choices : [
             ["Approach with logic", "heoPath14"],
             ["Approach with arrogance", "agrPath12"],
             ["Do not Approach", "cowPath13"]
@@ -417,7 +439,7 @@ Outside going unnoticed, the water was churning, and an unmanned destroyer was b
 “This is getting annoying,” yelled Jotaque, “where are you all at, stop hiding from me cowards.” Multiple yellow streak then impacts the shield of the C3N-T1_PL3AD.
 “There you ar-” Jotaque is cutoff when a black arrow burrows deep into the superstructure of the C3N-T1_PL3AD. “ARRRGH, PESTS, ALL OF YOU!” yells Jotaque.
 “Yeah yeah buddy,” said Tylinus, “bring it over here so we can talk it out.” Jotaque growls at this and head towards them at full speed.`,
-        Decisions : [
+        choices : [
             ["agrPath12c"],
             ["heoPath14c"],
             ["cowPath13c"]
@@ -440,7 +462,7 @@ He whips back around and said, “That’s not a book.”
 “Heck yeah,” cheers Wenter, “Wenter ex machina, lets go!”
 “Wenter, I need your help over here,” radioed Kaina, “Formatia HQ”
 “Got it, on my way.” Wenter radioed back. Upon arriving, he saw Kaina limping towards Lytheys in the plaza. He lands near him and lowers the bay doors down and Rugasus, Yveta, and Ferelia walk out and observe what happened.`,
-        Decisions : [
+        choices : [
             ["exoHeo"],
             ["exoCow"],
         ]
@@ -476,14 +498,13 @@ Tylinus lowers his weapon and called out, “Fallen, we gotta stop meeting like 
 “Well I thought I’d just tell you in person,” said Fallen, “I still owe you guys, if you need me, you know who to call.” She then sinks into the ground disappearing into a black mist.
 “To a colorful city!” yelled someone on the top of the stage at the Farland bar.
 “To a colorful city!” chanted the rest of the club which then dissolved into chat and banter as the members of Formatia celebrate their victory. The crew was also present, all sitting in reserved seats with Rugasus taking full advantage of the special guest title given to them by eating up what he could. The crew were socializing in their own groups, but Kaina sat alone in the corner, running his finger around the rim of the glass. He then looks towards the bar and spots Lytheys drinking her heart out.`,
-        decisions : [
+        choices : [
             ["Comfort Lytheys", "heoPath15"],
             ["Leave Lytheys be" , "cowPath14"]
         ]
     },
     heoPath0 : {
         text :`Talk envelops the group soon after and it was interrupted almost as fast as it started by Rugasus stating, “Forget it, lets just go.”
->>>>>>> 5c8f75e5d345c860de20d5c7f83fee267d690a73
 “Well that was a quick 180, have I influenced you that much.” Kaina retorted.
 “First, your statement is invalid, second, shut up.” Rugasus said back`,
         continue :[
@@ -664,7 +685,7 @@ He sits next to her and said, “That rough huh?”
 “What are you still doing here Kaina,” asked Lytheys depressingly. “You could’ve left whenever you wanted.”
 “Well mainly we need to get Taika out of the ground and wait for the repairs for the strander to be complete before we can go.” Lytheys looks down trying to ignore Kaina. “But for me, I need to make sure you’re okay.” 
 Lytheys looks towards Kaina and said, “How could I be okay after what I had done. For all my life I feel like, my choices were always the wrong ones. No matter what I do, I make things worse.”
-“Hey,” consols Kaina, “You made those decisions with good intentions, you wanted to protect those close to you.”
+“Hey,” consols Kaina, “You made those choices with good intentions, you wanted to protect those close to you.”
 “What by shooting them into submission?” countered Lytheys.
 “No, but didn’t you notice what happened,” pointed out Kaina, “No one retaliated, no one fought back. They trusted you enough to not defend themselves because they knew you wouldn’t hurt them.” Lytheys body is washed over in realization. A hand rests upon her left shoulder. She turns around and finds several people surrounding her, all in trust.
 “We hope you will lead this city for all of us.” said a man. Several people joined the rant of encouragement and in no time Lytheys was convinced.
@@ -683,24 +704,50 @@ Lytheys looks towards Kaina and said, “How could I be okay after what I had do
     
 }
     
-  
-    
-    
-let storyContainer = document.getElementById('story');
-let buttonContainer = document.getElementById('buttons');
-    
-function createButton(){
+    function createButton(buttonText, choice, agr, hero, cow){
         let button = document.createElement ('button');
         
-        button.innerHTML = "Accept Contract";
-        button.addEventListener ('click', function() {alert('Button was clicked.')})
-        buttonContainer.appendChild(button);
+        button.innerHTML = buttonText;
+
+        buttonContainer.appendChild(button)
+
+        button.addEventListener ('click', function() {
+            history.push (choice);
+            aggressivePoints = aggressivePoints += agr;
+            heroicPoints = heroicPoints += hero;
+            cowardPoints = cowardPoints += cow;
+            console.log(`Coward: ${cowardPoints}, Hero: ${heroicPoints}, Aggro: ${aggressivePoints}`)
+            showStory();
+            })
     }
-    for(var i = 0; i<3; i++){
-        createButton();
+
+    function buildStory(text) {
+            let storyItem = document.createElement("p");
+            storyItem.innerText = text;
+            storyContainer.appendChild(storyItem);
+        }
+
+
+    function showStory(){
+        let currentPage = history[history.length - 1];
+
+        storyContainer.innerHTML = "";
+        buttonContainer.innerHTML = "";
+
+        for(let page of history){
+            buildStory(story[page].text);
+        }
+
+        for(let choice of story[currentPage].choices){
+            createButton(choice[0], choice[1], choice[2], choice[3], choice[4])
+        }
     }
     
+    showStory();
+
     </script>
-  
+
+
+    
 </body>
 </html>
