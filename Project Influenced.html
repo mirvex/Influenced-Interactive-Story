@@ -23,27 +23,27 @@
 
     <script>
 
-    var BackgroundColor="LightBlue";
-          
-    document.body.style.backgroundColor=BackgroundColor
+var BackgroundColor = "LightBlue";
 
-    let storyContainer = document.getElementById('story');
-    
-    let buttonContainer = document.getElementById ('buttons');
+document.body.style.backgroundColor = BackgroundColor
 
-    let history = ["intro"];
+let storyContainer = document.getElementById('story');
 
-    let aggressivePoints = 0
+let buttonContainer = document.getElementById('buttons');
 
-    let heroicPoints = 0
+let history = ["intro"];
 
-    let cowardPoints = 0
+let aggressivePoints = 0
 
-    
-        
-    const story = {
-        intro : {
-            text : `“I cannot believe this!” exclaimed Rugasus, “they expect us to seriously pick this up literally right after dealing with the likes of Dirvana!”
+let heroicPoints = 0
+
+let cowardPoints = 0
+
+
+
+const story = {
+    intro: {
+        text: `“I cannot believe this!” exclaimed Rugasus, “they expect us to seriously pick this up literally right after dealing with the likes of Dirvana!”
 “Calm down Rug, we simply can’t sweep this under the desk if it is worth this much.” bargained Tylinus. The crew were all back safely on their base after the nightmare that was Dirvana, a being able to control reality at his will, barely able to escape with their lives. Their familiar base was formed on the back of recently formed volcanic rock, all mostly grayish black. A man-made beach rests at the base of the island, with it idly accepting the embrace of the water that flows onto it. Overlooking the events below was the watchtower Yveta constructed herself, as she did not find her current abode to be satisfactory. The ATC tower kept a watchful eye of the skies, despite the fact no one was present to make any use of the information on the monitors. Then there was the main hub, four stories high and full of tense energy, as if the atmosphere itself was able to push you slightly in the other direction.
 “Like I could care about their problems, I need a damn break anyway!” exclaimed Rugasus once more.
 “Come on, it can’t be that hard,” pushed Tylinus, “it's only in the city of Virba; from what I’ve heard, it's not that bad of city.”
@@ -60,15 +60,15 @@ Ferelia exhales, “Yeah yeah whatever.”  She examines the paper closely and h
 “And will you ever tell us where you see these kinds of places from.” asks Tylinus, not really expecting an answer.
 Ferelia pauses, then said, “Nope.” She then turns around and leaves the room. Her red orange hair flowing perfectly on her exit.
 “Alright, back on topic,” said Tylinus, “What's the plan for Virba.” `,
-        choices : [
-        ["Accept contract", "heoPath0", 0, 0, 0],
-        ["Force everyone to take contract", "agrPath0", 0, 0, 0],
-        ["Decline contract", "cowEnding1", 0, 0, 0]
-    ]
-},
+        choices: [
+            ["Accept contract", "exo2", 0, 0, 0],
+            ["Force everyone to take contract", "agrPath0", 0, 0, 0],
+            ["Decline contract", "cowEnding1", 0, 0, 0]
+        ]
+    },
 
-    exo2 : {
-        text : `Kaina sighs and looks towards Tylinus, “What kind of specializations do we need for this one.”
+    exo2: {
+        text: `Kaina sighs and looks towards Tylinus, “What kind of specializations do we need for this one.”
 “Details are scarce, but all we know is that the client wants the VIP kicked from his position in his dictatorship.” explained tylinus
 “They want him dead or alive?” asks Wenter
 “Either or…” Tylinus started
@@ -101,14 +101,14 @@ As they headed towards the exit, a console in the wall said, “Here is your tic
 “Some park.” retorted Rugasus. “What are supposed to do just walk.” Upon saying this,  he realized that the other three were already walking ahead of them. He gave an expression of disappointing realization and moved to catch up with the group.
 
 The crew were walking when they spotted some buildings up ahead, “So there is a city here after all.” said Rugasus. When they reached the street, it was wide enough to fit 4 lanes of traffic going both ways, but not a single car occupied even a parking space. The lights continued to control traffic despite its absence. The skyscrapers that ran along the sides were lacking any form uniqueness, no lights, no signs, just gray concrete and tinted glass. A man was walking in the opposite direction of the crew, looking as disorganized as a file drawer stuffed with too many papers.`,
-         choices : [
-            ["ask for directions", "heoPath1", 0, 0, 0],
+        choices: [
+            ["ask for directions", "exo3", 0, 0, 0],
             ["Have everyone take your lead", "agrPath1", 0, 0, 0],
             ["Split up", "cowPath1", 0, 0, 0]
         ]
     },
-    exo3 : {
-        text : `Upon arriving at the bar, it had more character than the outside could ever become. The yellow neon lights highlighting the walls, tables with polished wooden finishes, and T.Vs lining the bar showing the latest products from the A.N.T. Sugar Glass, and an unoccupied stage with curtains drawn..
+    exo3: {
+        text: `Upon arriving at the bar, it had more character than the outside could ever become. The yellow neon lights highlighting the walls, tables with polished wooden finishes, and T.Vs lining the bar showing the latest products from the A.N.T. Sugar Glass, and an unoccupied stage with curtains drawn..
 “Hello there, what can I get you four?” asks the Bartender.
 “Just waters all around would be fine.” said Tylinus 
 “Ahh, that’s boring,” said the Bartender, “suppose you waiting for someone?”
@@ -121,23 +121,23 @@ The bartender scratches his beard and simply answers, “Alright.” The four fi
 “Oh yeah,” said Rugasus leaning back in his chair, “What might that be?” 
 The man smiles elegantly and raises his hands above his head and yells, “Expression!” Just then, the doors swung open and people began to fill the bar at an alarming rate. The man raises the end of his umbrella to mouth, “Individuality, uniqueness, character, but most important of all, it’s just no fun.” The crowd cheers to his presence. “I vill not sit here and vatch zis, my city, fade avay into obscurity, so ladies and gentlemen, I present to you our main event.” A band quickly assembles on the stage and begins to play vigorously. “The men and vomen here see ze consequences as negligible, and here tonight they vill spill zere heart and soul into zeir art. So sit back, relax, and release every ounce of pent up energy have into zis night!” The crowd cheered again and form a dance floor in the center of the bar and begin to dance wildly. The crew stand up trying to see over the crowd but get separated.`,
 
-        choices : [
+        choices: [
             ["Do Nothing", "heoPath2", 0, 0, 0],
             ["Fight", "agrPath2", 0, 0, 0],
             ["Resist", "cowPath2", 0, 0, 0]
         ]
     },
-    exo4 : {
-        text : `Just then, the doors were blown down and men in gray suits with clubs and sidearms stormed the bar. Another slightly more decorated officer shot into the air and yelled, “That’s enough, arrest them all!” Kaina was dropped onto the floor as the people scrambled.`,
+    exo4: {
+        text: `Just then, the doors were blown down and men in gray suits with clubs and sidearms stormed the bar. Another slightly more decorated officer shot into the air and yelled, “That’s enough, arrest them all!” Kaina was dropped onto the floor as the people scrambled.`,
 
-        choices : [
+        choices: [
             ["Draw weapons", "agrPath3", 0, 0, 0],
             ["Follow his suggestion", "heoPath3", 0, 0, 0],
             ["Surrender", "cowPath3", 0, 0, 0]
         ]
     },
-    exo5 : {
-        text : `Rugasus was already busy getting into slugfests with the Gray-suits and Koiraze was hitting them with the dull side of her sword.
+    exo5: {
+        text: `Rugasus was already busy getting into slugfests with the Gray-suits and Koiraze was hitting them with the dull side of her sword.
 Tylinus linked up with Kaina said to the man from the stage, “What’s going on.”
 The man replies, “zey are here to crash my party.”
 A Gray-suit approached them and said, “Surrender yourself, you have no right to be here!”
@@ -182,29 +182,29 @@ Koiraze takes off her mask and said, “Anata ga anata no jinsei no saidai no ku
 “It’s not particularly something we would like to explain in this professional setting.” explained Tylinus.
 “I don’t care about the reason, we are short on time and I need people I can trust, you want your payment, then take off the mask.” commanded Lytheys. Rugasus and Tylinus both nod agreement to Kaina and head over to the other side of the table.`,
 
-        choices : [
+        choices: [
             ["Take off mask", "heoPath4", 0, 0, 0],
             ["Come up with an embarrasing excuse, cowPath4", 0, 0, 0]
         ]
-        
+
     },
-    exo6 : {
-            text : `A few days had passed, and the time had come for the plan to be put into action. Kaina was awaiting for his role to be called when it became apparent that they were dangerously close to being behind schedule. Kaina went to Brozuire for answers.
+    exo6: {
+        text: `A few days had passed, and the time had come for the plan to be put into action. Kaina was awaiting for his role to be called when it became apparent that they were dangerously close to being behind schedule. Kaina went to Brozuire for answers.
 “Ve are ready to go, but it vould seem zat Lytheys has spent a little more time zan usual at ze top of ze clock tower.” replied Brozuire.
 “Why there?” asked Kaina.
 “It vas apparently built by her father, she even helped vith a brick or two.” answered Brozuire. “Perhaps you can fetch her for me, our vindow is closing fast, and ve vill need our leader leading ze operation.”
 “Got it.” Kaina said as he unholsters his lever actions and uses the recoil of firing them periodically in order to fly.
 “I have not seen zat ever in my life.” Brozuire said as he watches a physics defying man flying off into absurdity. The clock tower was not hard to spot as it was a different building architecturally compared to the rest of the city. It was unfinished, and a large portion of the roof was missing. Kaina flew into the opening and slid across the wooden floor. He looked around and found Lytheys sitting down at the edge of the tower, observing the non-active city.`,
 
-        choices : [
+        choices: [
             ["Approach with empathy", "heoPath5", 0, 0, 0],
             ["Approach with anger that the job is being ignored", "agrPath4", 0, 0, 0],
             ["Approach with no real idea what to say", "cowPath5", 0, 0, 0]
         ]
 
     },
-    exo7 : {
-        text : `Upon observing the target area, the plan was already in jeopardy. A large white and blue building towers over the area, looking down at anyone who glances at it. It widens as it gets to the base, with guards covering every occupiable space around it. The roads leading into the building were still made of dirt and mud with tractors and dump-trucks regular working the road. A convoy of trucks ran through and stopped at the entrance.
+    exo7: {
+        text: `Upon observing the target area, the plan was already in jeopardy. A large white and blue building towers over the area, looking down at anyone who glances at it. It widens as it gets to the base, with guards covering every occupiable space around it. The roads leading into the building were still made of dirt and mud with tractors and dump-trucks regular working the road. A convoy of trucks ran through and stopped at the entrance.
 “Zis is not vhat’s supposed to happen.” said Brozuire scouting the area on top of a dirt hill with the reflective side of his umbrella.
 “What’s the status?” urges Rugasus from below.
 “ze shipment vas supposed to be one of great importance, but zis is just a regular convoy.” explained Brozuire, not taking his eye off his umbrella.
@@ -216,15 +216,15 @@ Koiraze takes off her mask and said, “Anata ga anata no jinsei no saidai no ku
 “Ve only got ze first half of it’s production name, it was named C3N-T1.” Brozuire answered. 
 “So what do we do now, we can’t sit here forever.” said Rugasus.`,
 
-        choices : [
+        choices: [
             ["Find Plan", "heopath6", 0, 0, 0],
-            ["Go in guns blazing","agrPath5", 0, 0, 0],
+            ["Go in guns blazing", "agrPath5", 0, 0, 0],
             ["suggest to call off the entire operation", "cowPath6", 0, 0, 0]
         ]
 
     },
-    exo8 : {
-        text : `“Let’s hope this works.” said Tylinus. Kaina climbs into the cab, and retchs at the smell of gasoline and beer. Koiraze takes the front, sword drawn, Tylinus and Rugasus jump in the back, Rugasus with his akimbo SMGs goes behind cover, and Tylinus having his laser rifle scouting the front.
+    exo8: {
+        text: `“Let’s hope this works.” said Tylinus. Kaina climbs into the cab, and retchs at the smell of gasoline and beer. Koiraze takes the front, sword drawn, Tylinus and Rugasus jump in the back, Rugasus with his akimbo SMGs goes behind cover, and Tylinus having his laser rifle scouting the front.
 
 The guards were walking back and forth when one asks, “Hey.”
 “Yeah?” asks the other guard.
@@ -236,7 +236,7 @@ The guards were walking back and forth when one asks, “Hey.”
 “Taka sugiru yama wa arimasen (No mountain is too tall)” said Koiraze. She then slashes the air and the energy from the blade extends outward, putting huge holes in the entrance. The truck then crashes straight through what was left, dust, glass, and concrete spilling over onto the polished floor. The truck persisted to run straight through interior decorations, walls, and guards all the same. Rugasus fires upon those who reside behind their offensive. A guard with a rocket launcher then peers over a corner.
 “Watch out!” shouts Kaina as the rocket is fired. It explodes to the lower right of the truck, causing it to flip over on its side. As it slides, the crew immediately vacate the vehicle, jumping into the air. When the land, they start sliding on their feet and fire back at the enemy. They reach another hallway and run into it.`,
 
-        choices : [
+        choices: [
             ["Wander", "heoPath7", 0, 0, 0],
             ["Interrogate personel", "agrPath6", 0, 0, 0],
             ["Hold up in the nearest room", "cowPath7", 0, 0, 0]
@@ -244,8 +244,8 @@ The guards were walking back and forth when one asks, “Hey.”
 
     },
 
-    exo9 : {
-        text : `“Anata no hōhō wa hikōritsutekidesu, watashi wa sore o jibun de yarimasu. (Your methods are inefficient, I’ll do it myself.)” said Koiraze. Pink energy fills her blade again, she then sheaths her blade and does three quick slashes in and out. Pink lines go across the door and it begins the groan as the metal is then kicked backwards into four separate pieces all hovering in the air. 
+    exo9: {
+        text: `“Anata no hōhō wa hikōritsutekidesu, watashi wa sore o jibun de yarimasu. (Your methods are inefficient, I’ll do it myself.)” said Koiraze. Pink energy fills her blade again, she then sheaths her blade and does three quick slashes in and out. Pink lines go across the door and it begins the groan as the metal is then kicked backwards into four separate pieces all hovering in the air. 
 “Go!” ordered Tylinus. They each, one by one, slide through the gaps of red hot metal. Bullets were still flying in and once the last member got through, the pieces of the door whipped back into the same position they were in previously, locking out the guards. The crew got a handle of their surroundings and found themselves to be in a dark room.
 “Someone get the lights.” said Tylinus. Koiraze takes out her sword and the pink energy was enough to the crew to see each other.
 “You suck at driving.” said Rugasus to Kaina. 
@@ -262,15 +262,15 @@ A muffled explosion is heard from the door and the guards yelled, “Come on, so
 “Perhaps his psyche has just a pinch of insanity.” jokes Rugasus. Tylinus finds that there was an unusual amount of unused space leading into a large door. The audio log gets to a part where the scientist begins to plan his escape and in its explanation, complete described what Tylinus found inside. 
 Kaina takes the hard drive out after the download finished, “We need to find a way outta here.” Kaina said.`,
 
-        choices : [
+        choices: [
             ["Take Tylinus's idea", "heoPath8", 0, 0, 0],
             ["Blow a Hole in the wall", "agrPath7", 0, 0, 0],
             ["Build defenses and camp", "cowPath8", 0, 0, 0]
         ]
 
     },
-    exo10 :{
-        text : `The guards at the door were feeling around with advanced stethoscopes, looking for weak points in the metal. Suddenly, one guard can hear the sound of a large engine turning on, and it was rapidly getting closer. “GET DOWN!” yelled the guard. The door was suddenly blown off its hinges with a large explosion and hits the two parts fall to the ground with the sound of heavy shredded metal skidding across the ground. The Guards flew backwards and out of the room, a peculiar looking looking tank as its cannon was unique. 
+    exo10: {
+        text: `The guards at the door were feeling around with advanced stethoscopes, looking for weak points in the metal. Suddenly, one guard can hear the sound of a large engine turning on, and it was rapidly getting closer. “GET DOWN!” yelled the guard. The door was suddenly blown off its hinges with a large explosion and hits the two parts fall to the ground with the sound of heavy shredded metal skidding across the ground. The Guards flew backwards and out of the room, a peculiar looking looking tank as its cannon was unique. 
 “Alright, we’re getting out of here!” said Kaina, who was enjoying himself a little to much.
 “Why’d we let this guy drive again,” yelled Rugasus from the mounted turret, “he sucks at driving!”
 “Don’t worry, I got it!” yelled back Kaina as he proceeds to drive through the drywall of several rooms. “By the way, which way did we come from-” He cut himself off at the sudden realization that he had driven out of the side of the building that was facing a cliff.
@@ -287,29 +287,29 @@ As the tank began to fall, Rugasus shouted, “This was not it chief!” He then
 “Lytheys, where is she” demanded Kaina.
 “Pinpointing…” said the A.I., “It would seem that they are currently heading down a hall in the third floor to the east,” Kaina was pondering, there is no way that she could’ve been caught so soon, especially without the presence of the resistance, “would you like me to place a waypoint and navigate?” asked the A.I.`,
 
-        choices : [
+        choices: [
             ["Save her", "heoPath9", 0, 0, 0],
             ["Disregard her", "agrPath8", 0, 0, 0],
             ["Retreat", "cowpath9", 0, 0, 0]
         ]
     },
-    exo11 : {
-        text : `Lytheys was being escorted by two guards when suddenly Kaina crashes in through a window and drop kicks the farthest guard and shoots the other.
+    exo11: {
+        text: `Lytheys was being escorted by two guards when suddenly Kaina crashes in through a window and drop kicks the farthest guard and shoots the other.
 “Kaina,” exclaimed Lytheys, “what are you doing here?”
 “Well obviously I’m here to rescue you.” stated Kaina.
 “Your not supposed to be here,” said Lytheys, “I made a deal, he said that he would just capture them.”
 “Who?” asked Kaina confused.
 “I believe she is referring to me.” said a voice. A man came from the hall and wrapped his arm around Lytheys’s shoulder.
 “Jotaque,” said Kaina staring with cold eyes.`,
-        
-        choices : [
+
+        choices: [
             ["Shoot Jotaque", "heoPath10", 0, 0, 0],
             ["Bargin with Jotaque", "cowPath10", 0, 0, 0]
         ]
 
     },
-    exo12 : {
-        text : `“They aren’t coming,” Kaina answers, “I told Brozuire to call off the attack after telling him we could handle it ourselves.”
+    exo12: {
+        text: `“They aren’t coming,” Kaina answers, “I told Brozuire to call off the attack after telling him we could handle it ourselves.”
 “W-What?” stammers Lytheys.
 “Ah, well that’s too bad, it would seem that our plan fell through.” said Jotaque with a disappointed face.
 “Your friends are fine Lytheys, come on we need to go.” said Kaina.
@@ -328,58 +328,55 @@ Rugasus can be heard yelling while firing the mounted machine gun through the ra
 “We’re gonna head your way,” explained Tylinus, “get these guys off us and we’ll be able to take that thing down.”
 “Or you could just drive straight!” yelled Rugasus.`,
 
-        choices : [
+        choices: [
             ["Fight Overseer", "agrPath9", 0, 0, 0],
             ["Save Tylinus", "heoPath11", 0, 0, 0],
             ["Fly away", "cowPath11", 0, 0, 0]
         ]
     },
 }
-    
-    function createButton(buttonText, choice, agr, hero, cow){
-        let button = document.createElement ('button');
-        
-        button.innerHTML = buttonText;
 
-        buttonContainer.appendChild(button)
+function createButton(buttonText, choice, agr, hero, cow) {
+    let button = document.createElement('button');
 
-        button.addEventListener ('click', function() {
-            history.push (choice);
-            aggressivePoints = aggressivePoints += agr;
-            heroicPoints = heroicPoints += hero;
-            cowardPoints = cowardPoints += cow;
-            console.log(`Coward: ${cowardPoints}, Hero: ${heroicPoints}, Aggro: ${aggressivePoints}`)
-            showStory();
-            })
+    button.innerHTML = buttonText;
+
+    buttonContainer.appendChild(button)
+
+    button.addEventListener('click', function() {
+        history.push(choice);
+        aggressivePoints = aggressivePoints += agr;
+        heroicPoints = heroicPoints += hero;
+        cowardPoints = cowardPoints += cow;
+        console.log(`Aggro: ${aggressivePoints}, Hero: ${heroicPoints}, Coward: ${cowardPoints}`)
+        showStory();
+    })
+}
+
+function buildStory(text) {
+    let storyItem = document.createElement("p");
+    storyItem.innerText = text;
+    storyContainer.appendChild(storyItem);
+}
+
+
+function showStory() {
+    let currentPage = history[history.length - 1];
+
+    storyContainer.innerHTML = "";
+    buttonContainer.innerHTML = "";
+
+    for (let page of history) {
+        buildStory(story[page].text);
     }
 
-    function buildStory(text) {
-            let storyItem = document.createElement("p");
-            storyItem.innerText = text;
-            storyContainer.appendChild(storyItem);
-        }
-
-
-    function showStory(){
-        let currentPage = history[history.length - 1];
-
-        storyContainer.innerHTML = "";
-        buttonContainer.innerHTML = "";
-
-        for(let page of history){
-            buildStory(story[page].text);
-        }
-
-        for(let choice of story[currentPage].choices){
-            createButton(choice[0], choice[1], choice[2], choice[3], choice[4])
-        }
+    for (let choice of story[currentPage].choices) {
+        createButton(choice[0], choice[1], choice[2], choice[3], choice[4])
     }
-    
-    showStory();
+}
+
+showStory();
 
     </script>
-
-
-    
 </body>
 </html>
