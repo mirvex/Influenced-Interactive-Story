@@ -363,8 +363,8 @@ Kaina is then also promptly distracted when Brozuire radios in, “Guys, I vould
 “Who?” radioed back Kaina.
 “Lytheys,” radioed Brozuire.`,
         Decisions : [
-            ["Help Brozuire", "heoPath13" ]
-            ["Tell him to handle it himself", "agrPath11"]
+            ["Help Brozuire", "heoPath13" ],
+            ["Tell him to handle it himself", "agrPath11"],
             ["Help Rugasus", "cowPath12"]
         ]
     },
@@ -687,13 +687,16 @@ Lytheys looks towards Kaina and said, “How could I be okay after what I had do
     
     
 let storyContainer = document.getElementById('story');
+
 let buttonContainer = document.getElementById('buttons');
     
 function createButton(){
         let button = document.createElement ('button');
         
         button.innerHTML = "Accept Contract";
+
         button.addEventListener ('click', function() {alert('Button was clicked.')})
+        
         buttonContainer.appendChild(button);
     }
     for(var i = 0; i<3; i++){
