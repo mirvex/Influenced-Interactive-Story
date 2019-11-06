@@ -272,7 +272,7 @@ As the tank began to fall, Rugasus shouted, “This was not it chief!” He then
         choices : [
             ["Save her", "heoPath9"],
             ["Disregard her", "agrPath8"],
-            ["Retreat", "cowpath9"]
+            ["Retreat", "cowPath9"]
         ]
     },
     exo11 : {
@@ -1009,10 +1009,20 @@ Tylinus is shocked, “Well we have to save her.”
 Tylinus looks up towards Kaina’s craft leaving a trail of smoke from the thrusters and said, “Where’s he going?”`,
 
         choices : [
-            ["Continue", "exo13"]
+            ["Continue", "nopeEnd"]
         ]
     },
     cowPath12 : {
+        text :`“Well I don’t want any trouble.” responded Kaina. 
+“Doesn't matter,” said the Gray-suit, “I’m still eligible to take you under suspicious activity”
+“Well maybe we can still work something ou-” Kaina was cut off when Wenter shot off a concussive round into the gray-suit. He proceeded to fly back about six feet with an almost-about-to-barf face stuck on his face.
+“Let’s not get too chummy with the locals,” said Wenter, “we still have a job to do.”`,
+
+        choices : [
+            ["continue", "exo14"]
+        ]
+    },
+    cowPath13 : {
         text : `Kaina is shocked at the news, but he looks back to Rugasus as he get thrown through another wall, “Can it wait, I gotta deal with something real quick.”
 “No, vait-!” Brozuire radioed before getting cut off. Kaina blasts himself towards the Librarian and drop kicks him through a wall.
 “I told you to go on without me!” exclaimed Rugasus from the other side of the building.
@@ -1021,10 +1031,10 @@ Tylinus looks up towards Kaina’s craft leaving a trail of smoke from the thrus
 He lays there on the floor looking at the ceiling and said aloud, “I’m never sticking my head out for him ever again.” The train proceeds underground and Kaina spots an exit. Upon first contact, Kaina blasts himself to the side as the train roars by without him. He lands on his side and rolls several feet before stopping. He picks himself up and heads towards the exit upstairs.`,
 
         choices : [
-            ["Continue", "nopeEnd"]
+            ["Continue", "exo14"]
         ]
     },
-    cowPath13 : {
+    cowPath14 : {
         text : `Kaina just observes the situation from afar, thinking it best that he keep his distance from such a matter as this.
 “Lytheys, please stop zis, ve vill make it novhere vith zeese shenanigans.” begged Brozuire.
 “No, what I’m doing is right,” exclaimed Lytheys, “you’ll all be safe if you just listen to me!” She shoots up the base some more and the members retreat further.`,
@@ -1033,7 +1043,7 @@ He lays there on the floor looking at the ceiling and said aloud, “I’m never
             ["Continue", "exo15"]
         ]
     },
-    cowPath13c : {
+    cowPath14c : {
         text : `Lytheys still guards the exit from the HQ when the sight of the C3N-T1_PL3AD left her is shock.
 “Best you get them out of there while you still can!” yelled down Tylinus from his perch on the building.
 Brozuire looks towards Lytheys and said, “Please.”
@@ -1045,11 +1055,18 @@ Lytheys strained herself in thought before she finally said, “Fine! Go! Go!”
             ["Continue", "exo16"]
         ]
     },
-    cowPath14 : {
+    cowPath15 : {
         text : `Kaina closes his eyes and breaths deeply as he knows that Lytheys is probably best to her own. After all, what could he do? Nothing was the answer he gave himself.`,
 
         choices : [
             ["Continue", "endEval"]
+        ]
+    },
+    end : {
+        text:``,
+
+        choices : [
+            []
         ]
     },
 }
