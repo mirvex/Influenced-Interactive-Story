@@ -63,7 +63,7 @@ Ferelia pauses, then said, “Nope.” She then turns around and leaves the room
         choices : [
         ["Accept contract", "heoPath0"],
         ["Force everyone to take contract", "agrPath0"],
-        ["Decline contract", "cowEnding1"]
+        ["Decline contract", "cowPath0"]
     ]
 },
     exo2 : {
@@ -311,7 +311,7 @@ Rugasus can be heard yelling while firing the mounted machine gun through the ra
         choices : [
             ["Fight Overseer", "agrPath9"],
             ["Save Tylinus", "heoPath11"],
-            ["Fly away", "nopeEnd"]
+            ["Fly away", "cowPath11"]
         ]
     },
     exo13 : {
@@ -344,7 +344,7 @@ Unnoticed by anybody, Koiraze gets a message on her arm monitor saying, “We do
        choices : [
            ["Capture him", "heoPath12"],
            ["Shoot him", "agrPath10"],
-           ["Get him to leave", "cowPath11"]
+           ["Get him to leave", "cowPath12"]
            
        ] 
     },
@@ -387,7 +387,7 @@ Kaina is then also promptly distracted when Brozuire radios in, “Guys, I vould
         choices : [
             ["Help Brozuire", "heoPath13" ],
             ["Tell him to handle it himself", "agrPath11"],
-            ["Help Rugasus", "cowPath12"]
+            ["Help Rugasus", "cowPath13"]
         ]
     },
     exo15 : {
@@ -417,7 +417,7 @@ Kaina flies in front of the HQ and lands. Observing the situation, he sees a mec
         choices : [
             ["Approach with logic", "heoPath14"],
             ["Approach with arrogance", "agrPath12"],
-            ["Do not Approach", "cowPath13"]
+            ["Do not Approach", "cowPath14"]
         ]
     },
     exo16 : {
@@ -442,7 +442,7 @@ Outside going unnoticed, the water was churning, and an unmanned destroyer was b
         choices : [
             ["agrPath12c", ""],
             ["heoPath14c", ""],
-            ["cowPath13c", ""]
+            ["cowPath14c", ""]
         ]   
     },
     exo17 : {
@@ -500,7 +500,7 @@ Tylinus lowers his weapon and called out, “Fallen, we gotta stop meeting like 
 “To a colorful city!” chanted the rest of the club which then dissolved into chat and banter as the members of Formatia celebrate their victory. The crew was also present, all sitting in reserved seats with Rugasus taking full advantage of the special guest title given to them by eating up what he could. The crew were socializing in their own groups, but Kaina sat alone in the corner, running his finger around the rim of the glass. He then looks towards the bar and spots Lytheys drinking her heart out.`,
         choices : [
             ["Comfort Lytheys", "heoPath15"],
-            ["Leave Lytheys be" , "cowPath14"]
+            ["Leave Lytheys be" , "cowPath15"]
         ]
     },
     heoPath0 : {
@@ -872,11 +872,184 @@ She reached out from her cabin and said, “Brozuire, NO!” She then does a ful
             ["Continue", "rageEnd"]
         ]
     },
-    cowPath : {
-        text : ``,
+    cowPath0 : {
+        text : ` “Look, we already had to deal with reality shifters and zombie masters, I say we skip it.” explained Kaina.
+“I’d say for once I agree with him.” stated Rugasus.
+“But-” started Tylinus
+“No buts,” interrupted Kaina, “I need a break, I have to deal with the fact that our greatest trump card might be useless against another user of the magic arts. So you know what, I’m out.” Kaina then leaves the room without a second thought.`,
 
         choices : [
-            ["Continue", "exo"]
+            ["Continue", "thatsItEnd"]
+        ]
+    },
+    cowPath1 : {
+        text : `“I say we split up.” suggested Kaina.
+“Why?” asked Rugasus.
+“Well, we’ll be able to cover more ground you know.” struggled Kaina. 
+“I guess.” said Tylinus. They all then split up into four different directions. For almost twenty minutes, the crew had found nothing.
+Finally, Koiraze radios in, “Rejā no basho ga ichi shite imasu. (The place of leisure has been located.)”
+“What’d she say.” Rugasus radioed in.
+“Don’t know.” radioed Tylinus.
+“I don’t think we’ll find her.” radioed Rugasus after a brief pause. “I blame this on Kaina.”
+“What do you mean?” radioed back Kaina.
+“Just hurry up and find her.” radioed Rugasus annoyed. After another hour, Kaina finally stumbles upon Tylinus and Rugasus outside the bar.
+“Why didn’t you ping your location?” asked Kaina.
+“The client said to stop using the radio cause the supposed dictatorship can trace it.” answered Rugasus.
+“Alright hurry up,” said Tylinus, “The client says we need everyone so get inside.”`,
+
+        choices : [
+            ["Continue", "exo3"]
+        ]
+    },
+    cowPath2 : {
+        text : `“Tylinus.” calls out Rugasus as he gets absorbed into the crowd. Kaina nervously raises his hand and gestures that he is not interested in what the party goers wanted to do with him, but this did little to stop the energy and hype, and Koiraze simply stays in here seat, observing the crowd. They all looked towards the center and found Tylinus dancing with the crowd, having a good time with a smile on his face. A general feeling of “you gotta be kidding me” ran through the whole group.`,
+
+        choices : [
+            ["Continue", "exo4"]
+        ]
+    },
+    cowPath3: {
+        text : `Kaina picks himself up and raises his hands over his head and said, “Please officer, we didn’t mean anything by it.”
+The gray-suit advanced towards him and said, “Yeah, well tell them that in the station.” He raises his baton to strike Kaina, but it is caught by Rugasus from behind. The gray-suit looks around to a punch in the face, causing him to crash on the ground hard.
+“We’re not playing yellow this time Kaina, get your act together.” sneered Rugasus. Kaina only watched as Rugasus walked away and lowered his hands to assess the situation.`,
+
+        choices : [
+            ["Continue", "exo5"]
+        ]
+    },
+    cowPath4 : {
+        text : `Kaina thinks fast and says, “Well...I don’t think you would want to see it what’s under it.”
+Lytheys looks annoyed and said, “I don’t care, show me.”
+Kaina said, “There’s something very ugly-”
+“Irrelevant, show me.” cut off Lytheys.
+“I just-” started Kaina.
+“If you are not able to follow even the most basic orders, then I don’t believe you will be of any use to our cause.” cut off Lytheys again. “Make yourself useful to me and take...it...off.” Kaina stays silent and looks at Lytheys, unsure what to do. “Fine,” said Lytheys after a moment, “leave us, we will much to discuss regarding your usefulness to our cause.”
+Tylinus pats Kaina on the back and said, “It’s okay, we know why you couldn’t.” Rugasus only nods in understanding. Kaina then turns around and walks out of the room.`,
+
+        choices : [
+            ["Continue", "exo6"]
+        ]
+    },
+    cowPath5 : {
+        text : `“The others,” Kaina said, “they’re waiting for you.”
+“What does it matter.” responded Lytheys, “I wait here to delay the inevitable, the people are eager to throw everything they have towards completing the goal I set for them.” She took a
+ swig from the flask from her side. “The city had never changed, but internally, everything has stopped. There is no...spirit left.” She turns around to Kaina and said, “Do you happen to know anything like that.” Kaina only shrugs his shoulders. Lytheys then looks down to the floor and said, “Yeah, I don’t expect you to understand.” Shakily, she gets up to her feet, only to fall onto her arms and knees. 
+Kaina asked, “You need some help?”
+“No,” responded Lytheys, “I can do this by myself.” She struggled to her feet again, this time actually able to stand.
+“Well, I might as well give you this.” said Kaina. He grabs Lytheys hand and places an injector into her hands.
+“What’s this for?” asked Lytheys.
+“It’s a neat little concoction,” explained Kaina, “just take it when you feel ready.”
+“Yeah,” said Lytheys looking at the injector full of thought, “I’ll uh, keep it in mind.” She sat back down to where she was and looks out towards the city again. Kaina gives her one last look and walks down the stairs out of sight.`,
+
+        choices : [
+            ["Continue", "exo7"]
+        ]
+    },
+    cowPath6 : {
+        text : `“I think since we don’t see what we came here for, we high tail it outta here and come back another day.” suggested Kaina.
+“No we’re not going to do that,” said Rugasus, “I didn’t all the way out here for nothing.”
+“Well, you got a better idea!” whispered Kaina aggressively. 
+Rugasus eyes a nearby vehicle, “I think I have an idea.” He walks over to a nearby dump truck and bangs on the door.
+Tylinus whispers as loud as he could, “Yo, what are you doing!”
+“Come on out now, we need to talk!” Demanded Rugasus. The door flew open and rock music started playing, an avalanche of beer bottles falls out of the cabin. A worker gets out of the seat, staggering the whole time.
+“You think you scare me, boss man.” slurred the worker, never making eye contact as his head was swinging every which way. “I’m the who gets all the work done, and without me, you would be nothing.” The worker takes another swig from the current bottle in his hand. “You know what, you’ll never get another ounce of work out of me, I don’t care-” He then promptly fell into the mud face first. Rugasus signals the crew that it was clear to come over.
+“Rugasus what were you thinking?” asks Kaina frustratingly
+“I must side vith ze angry man here, what you did could’ve blown ze whole operation.” agrees Brozuire.
+“Well it worked didn’t it, now get in the back, we’re gonna ram right through the front gate and gather all the intelligence we can.” explained Rugasus.
+“Zis is insane, if you do somezing like zis, his regime would be looking all around for us, no one vill be safe!” Exclaimed Brozuire.
+“That is why you’re going to call off the attack,” explained Rugasus, “we’ll go in ourselves and steal something valuable, that way the attack is not linked to you guys and Jotaque will focus more resources trying to find us more than you guys.”
+Brozuire contemplates the plan, he then begrudgingly said, “Ahhhh- Fine, your lucky zat Lytheys is not here, if so she vould of gone mental on zis plan.” He then checks his surroundings and makes his way out of the compound.`,
+
+        choices : [
+            ["Continue", "exo8"]
+        ]
+    },
+    cowPath7 : {
+        text : `On the first door that Kaina saw, he said, “Let's check in here!” He rams the door with his shoulder and finds himself facing 7 guards gearing up in the armoury. They stare at each other for a moment before the guards all point their weapons towards Kaina and fire. He barely has enough time to get back out and run before the space he occupied was riddled with holes. After catching up to the crew, they find a huge reinforced door.`,
+
+        choices : [
+            ["Continue", "exo9"]
+        ]
+    },
+    cowPath8 : {
+        text : `Kaina then flips over a long table and faced it towards the door. “We could stand off here, wait for an opportunity.” suggested Kaina
+“No, it’s too risky,” said Rugasus, “flamethrowers would eat up anything we try to do here.”
+“Then might I suggest this?” pointed out Tylinus.
+The crew then looked towards what Tylinus was pointing at. “That’ll work too” said Kaina.`,
+
+        choices : [
+            ["Continue", "exo10"]
+        ]
+    },
+    cowPath9 : {
+        text : `“No.” responded Kaina.
+“Kaina, what’s going on?” asked Tylinus.
+“Lytheys hs been captured.” answered Kaina.
+Tylinus is shocked, “Well we have to save her.”
+“Can’t,” said Kaina, “It’s too dangerous, the entire base has to be crawling with goons by now.”
+“Stop kidding yourself Kaina!” yelled Rugasus from the machine gun turret, “you’re the only one that is capable of getting there in time and getting out fast, so don’t get cold feet on me.”
+“Alright,” said Kaina, “I’ll see what I can do.” He then opens the hatch and blasts himself out of the tank towards the direction of Lytheys.`,
+
+        choices : [
+            ["Continue", "exo11"]
+        ]
+    },
+    cowPath10 : {
+        text : `“What do you want?” Kaina asks.
+“What do I want,” repeated Jotaque surprised, “well something that I doubt you have. I’m the ruler of this city, so I only accept offers that rulers are able to bid.”
+“Truly, you are scum.” said Kaina.
+“On the contrary,” fired back Jotaque, “I believe it is you who decided to steal from my home, so I need you to stop wasting my time and tell me when this little resistance is supposed to attack.”`,
+
+        choices : [
+            ["Continue", "exo12"]
+        ]
+    },
+    cowPath11 : {
+        text : `Kaina looks upon his situation, and simply said, “Nope.” He turns his pod to do a quick 180.
+Tylinus looks up towards Kaina’s craft leaving a trail of smoke from the thrusters and said, “Where’s he going?”`,
+
+        choices : [
+            ["Continue", "exo13"]
+        ]
+    },
+    cowPath12 : {
+        text : `Kaina is shocked at the news, but he looks back to Rugasus as he get thrown through another wall, “Can it wait, I gotta deal with something real quick.”
+“No, vait-!” Brozuire radioed before getting cut off. Kaina blasts himself towards the Librarian and drop kicks him through a wall.
+“I told you to go on without me!” exclaimed Rugasus from the other side of the building.
+“I’m just being a good samaritan.” said Kaina as he blasts himself toward the Librarian for another attack. The Librarian looks unfazed and grabs Kaina by the collar of his coat right before he lands his attack.
+“You are not part of this,” The Librarian, “This is between me and the accused, so you will leave this matter to me and begone!” The Librarian then slams Kaina into the front of a passing train. Kaina passes straight through the metal of the train while still being held by the Librarian, the metal of the trains side simply parting as it passes through his arm. The collar tears off and Kaina is set free of The Librarians grasp.
+He lays there on the floor looking at the ceiling and said aloud, “I’m never sticking my head out for him ever again.” The train proceeds underground and Kaina spots an exit. Upon first contact, Kaina blasts himself to the side as the train roars by without him. He lands on his side and rolls several feet before stopping. He picks himself up and heads towards the exit upstairs.`,
+
+        choices : [
+            ["Continue", "nopeEnd"]
+        ]
+    },
+    cowPath13 : {
+        text : `Kaina just observes the situation from afar, thinking it best that he keep his distance from such a matter as this.
+“Lytheys, please stop zis, ve vill make it novhere vith zeese shenanigans.” begged Brozuire.
+“No, what I’m doing is right,” exclaimed Lytheys, “you’ll all be safe if you just listen to me!” She shoots up the base some more and the members retreat further.`,
+
+        choices : [
+            ["Continue", "exo15"]
+        ]
+    },
+    cowPath13c : {
+        text : `Lytheys still guards the exit from the HQ when the sight of the C3N-T1_PL3AD left her is shock.
+“Best you get them out of there while you still can!” yelled down Tylinus from his perch on the building.
+Brozuire looks towards Lytheys and said, “Please.”
+Lytheys strained herself in thought before she finally said, “Fine! Go! Go!” The HQ is quickly being vacated when Brozuire notices someone is missing.
+“Frenta!” yelled Brozuire as he ran back towards the HQ. Frenta is seen struggling to even keep her footing as the ground exponentially got shakier. “Come here little one, you must move!” shouted Brozuire. Frenta tries to move, but she quickly loses her footing and falls over. “No!” shouted Brozuire. He ran inside to help her up and looked up to realize that it was too late. The C3N-T1_PL3AD mauls over the Formatia HQ with little resistance.
+“NOOOOOOOOO!” screams Lytheys as she reaches out with her hand. Moments later, she is left so grief stricken that her skin turns pale and her eyes look forward but see nothing. She looks down at the ground in shame as she realizes the consequences of her actions.`,
+
+        choices : [
+            ["Continue", "exo16"]
+        ]
+    },
+    cowPath14 : {
+        text : `Kaina closes his eyes and breaths deeply as he knows that Lytheys is probably best to her own. After all, what could he do? Nothing was the answer he gave himself.`,
+
+        choices : [
+            ["Continue", "endEval"]
         ]
     },
 }
