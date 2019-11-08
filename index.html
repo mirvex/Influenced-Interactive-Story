@@ -13,6 +13,11 @@
     <h1>Influenced</h1>
     </div>
 
+    <div id= "points">
+
+    </div>
+
+    </div>
     <div id="story">
 
     </div>
@@ -31,13 +36,15 @@
     
     let buttonContainer = document.getElementById ('buttons');
 
+    let pointsContainer = document.getElementById ('points');
+
     let history = ["intro"];
 
-    let aggressivePoints = 0
+    let aggressivePoints = 0;
 
-    let heroicPoints = 0
+    let heroicPoints = 0;
 
-    let cowardPoints = 0
+    let cowardPoints = 0;
 
     
         
@@ -63,7 +70,7 @@ Ferelia pauses, then said, “Nope.” She then turns around and leaves the room
         choices : [
         ["Accept contract", "heoPath0", 0, 0, 0],
         ["Force everyone to take contract", "agrPath0", 0, 0, 0],
-        ["Decline contract", "cowPath0", 0, 0, 455545436456437556574365357564576564574564357465765475365]
+        ["Decline contract", "cowPath0", 0, 0, 10]
     ]
 },
     exo2 : {
@@ -879,7 +886,7 @@ She reached out from her cabin and said, “Brozuire, NO!” She then does a ful
 “No buts,” interrupted Kaina, “I need a break, I have to deal with the fact that our greatest trump card might be useless against another user of the magic arts. So you know what, I’m out.” Kaina then leaves the room without a second thought.`,
 
         choices : [
-            ["Continue", "thatsItEnd"]
+            ["Continue", "thatsItEnd", 0, 0, 0]
         ]
     },
     cowPath1 : {
@@ -1129,6 +1136,7 @@ Lytheys strained herself in thought before she finally said, “Fine! Go! Go!”
             aggressivePoints = aggressivePoints += agr;
             heroicPoints = heroicPoints += hero;
             cowardPoints = cowardPoints += cow;
+            showPoints();
             console.log(`Coward: ${cowardPoints}, Hero: ${heroicPoints}, Aggro: ${aggressivePoints}`)
             showStory();
             })
@@ -1155,12 +1163,15 @@ Lytheys strained herself in thought before she finally said, “Fine! Go! Go!”
             createButton(choice[0], choice[1], choice[2], choice[3], choice[4])
         }
     }
+
+    function showPoints(){
+        pointsContainer.innerHTML = `Coward: ${cowardPoints}, Heroic: ${heroicPoints}, Aggressive: ${aggressivePoints}`;
+    }
     
     showStory();
-
     </script>
 
 
     
 </body>
-</html>
+</html
