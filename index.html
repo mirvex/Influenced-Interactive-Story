@@ -8,7 +8,7 @@
 </head>
 <body>
 
-
+    //html for putting stuff on page
     <div id="intro">
     <h1>Influenced</h1>
     </div>
@@ -31,7 +31,7 @@
     var BackgroundColor="LightBlue";
           
     document.body.style.backgroundColor=BackgroundColor
-
+    //containers
     let storyContainer = document.getElementById('story');
     
     let buttonContainer = document.getElementById ('buttons');
@@ -39,7 +39,7 @@
     let pointsContainer = document.getElementById ('points');
 
     let history = ["intro"];
-
+    //points for story choices
     let aggressivePoints = 0;
 
     let heroicPoints = 0;
@@ -48,7 +48,7 @@
 
     
         
-    const story = {
+    const story = { //storage for entire story
     intro : {
             text : `“I cannot believe this!” exclaimed Rugasus, “they expect us to seriously pick this up literally right after dealing with the likes of Dirvana!”
 “Calm down Rug, we simply can’t sweep this under the desk if it is worth this much.” bargained Tylinus. The crew were all back safely on their base after the nightmare that was Dirvana, a being able to control reality at his will, barely able to escape with their lives. Their familiar base was formed on the back of recently formed volcanic rock, all mostly grayish black. A man-made beach rests at the base of the island, with it idly accepting the embrace of the water that flows onto it. Overlooking the events below was the watchtower Yveta constructed herself, as she did not find her current abode to be satisfactory. The ATC tower kept a watchful eye of the skies, despite the fact no one was present to make any use of the information on the monitors. Then there was the main hub, four stories high and full of tense energy, as if the atmosphere itself was able to push you slightly in the other direction.
@@ -1236,7 +1236,7 @@ Lytheys smiles towards the skylight, seeing Kaina’s ship fly off into the suns
     }
 }
     
-    function createButton(buttonText, choice, agr, hero, cow){
+    function createButton(buttonText, choice, agr, hero, cow){ //function to create a button to allow for user input and point system
         let button = document.createElement ('button');
         
         button.innerHTML = buttonText;
@@ -1254,14 +1254,14 @@ Lytheys smiles towards the skylight, seeing Kaina’s ship fly off into the suns
             })
     }
 
-    function buildStory(text) {
+    function buildStory(text) { //adds text from the story storage to page
             let storyItem = document.createElement("p");
             storyItem.innerText = text;
             storyContainer.appendChild(storyItem);
         }
 
 
-    function showStory(){
+    function showStory(){ //function to display story to user
         let currentPage = history[history.length - 1];
 
         storyContainer.innerHTML = "";
@@ -1276,7 +1276,7 @@ Lytheys smiles towards the skylight, seeing Kaina’s ship fly off into the suns
         }
     }
 
-    function showPoints(){
+    function showPoints(){ //function to display points to user
         pointsContainer.innerHTML = `Coward: ${cowardPoints}, Heroic: ${heroicPoints}, Aggressive: ${aggressivePoints}`;
     }
     
